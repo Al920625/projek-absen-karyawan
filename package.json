@@ -20,11 +20,13 @@
     "@eslint/js": "9.25.1",
     "@getmocha/users-service": "^0.0.4",
     "@getmocha/vite-plugins": "latest",
+    "@netlify/functions": "^5.1.2",
     "@types/node": "22.14.1",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "@vitejs/plugin-react": "^5.1.2",
     "autoprefixer": "^10.4.21",
+    "esbuild": "^0.27.2",
     "eslint": "9.25.1",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "0.4.19",
@@ -36,11 +38,9 @@
     "vite": "^6.0.0",
     "wrangler": "^4.33.0"
   },
-  "scripts": {
-    "build": "vite build",
-    "cf-typegen": "wrangler types",
-    "check": "tsc && vite build && wrangler deploy --dry-run",
-    "dev": "vite",
-    "lint": "eslint ."
-  }
+"scripts": {
+  "build": "vite build",
+  "build:functions": "esbuild netlify/functions/*.ts --outdir=netlify/functions --platform=node",
+  "dev": "vite",
+  "lint": "eslint ."
 }
