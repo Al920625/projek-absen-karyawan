@@ -1,11 +1,88 @@
+# Netlify Configuration for Projek Absen Karyawan
+# This configuration handles both frontend and serverless functions deployment
+
+# Global settings
 [build]
+  # Frontend build command
   command = "npm run build"
+  
+  # Directory to publish (change based on your build output)
   publish = "dist"
+  
+  # Functions directory for serverless functions
+  functions = "netlify/functions"
+  
+  # Environment variables for build
+  environment = { NODE_ENV = "production" }
 
-[functions]
-  directory = "netlify/functions"
+# Development settings
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
 
+# Redirect rules
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+  force = false
+
+# Rewrite for SPA (Single Page Application) - uncomment if using React/Vue/Angular
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers configuration
+[[headers]]
+  for = "/*"
+  
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# API headers for CORS (adjust origins as needed)
+[[headers]]
+  for = "/.netlify/functions/*"
+  
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
+
+# Context-specific settings for production
+[context.production]
+  command = "npm run build:prod"
+  publish = "dist"
+  environment = { NODE_ENV = "production" }
+
+# Context-specific settings for preview/staging
+[context.deploy-preview]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_ENV = "staging" }
+
+# Context-specific settings for branch deploys
+[context.branch-deploy]
+  command = "npm run build"
+  publish = "dist"
+
+# Edge Functions (optional - for edge computing)
+# Uncomment if you plan to use Netlify Edge Functions
+# [[edge_functions]]
+#   path = "/api/*"
+#   function = "api-handler"
+
+# Form handling (optional - for Netlify Forms)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+#   conditions = { Role = ["admin"] }
+
+# Environment variables (store sensitive data in Netlify UI, not here)
+# [env]
+#   API_KEY = "@api_key"
+#   DATABASE_URL = "@database_url"
