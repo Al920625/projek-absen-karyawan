@@ -1,1 +1,287 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IHVzZU5hdmlnYXRlIH0gZnJvbSAncmVhY3Qtcm91dGVyJzsKaW1wb3J0IHsgRXllLCBFeWVPZmYsIE1vb24sIFN1biwgR2xvYmUgfSBmcm9tICdsdWNpZGUtcmVhY3QnOwppbXBvcnQgeyB1c2VBcHAgfSBmcm9tICdAL3JlYWN0LWFwcC9jb250ZXh0cy9BcHBDb250ZXh0JzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExvZ2luKCkgewogIGNvbnN0IG5hdmlnYXRlID0gdXNlTmF2aWdhdGUoKTsKICBjb25zdCB7IGlzRGFya01vZGUsIHRvZ2dsZURhcmtNb2RlLCBsYW5ndWFnZSwgc2V0TGFuZ3VhZ2UsIHNob3dOb3RpZmljYXRpb24gfSA9IHVzZUFwcCgpOwogIGNvbnN0IFt1c2VyVHlwZSwgc2V0VXNlclR5cGVdID0gdXNlU3RhdGU8J2FkbWluJyB8ICdrYXJ5YXdhbic+KCdhZG1pbicpOwogIGNvbnN0IFt1c2VySWQsIHNldFVzZXJJZF0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3QgW3Bhc3N3b3JkLCBzZXRQYXNzd29yZF0gPSB1c2VTdGF0ZSgnJyk7CiAgY29uc3QgW3Nob3dQYXNzd29yZCwgc2V0U2hvd1Bhc3N3b3JkXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbaXNMb2FkaW5nLCBzZXRJc0xvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGUoJycpOwoKICBjb25zdCBoYW5kbGVMb2dpbiA9IGFzeW5jIChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHsKICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgIHNldElzTG9hZGluZyh0cnVlKTsKICAgIHNldEVycm9yKCcnKTsKCiAgICB0cnkgewogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKCcvYXBpL2xvZ2luJywgewogICAgICAgIG1ldGhvZDogJ1BPU1QnLAogICAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LAogICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgdXNlclR5cGUsIHVzZXJJZCwgcGFzc3dvcmQgfSksCiAgICAgIH0pOwoKICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKCiAgICAgIGlmIChyZXNwb25zZS5vaykgewogICAgICAgIHNob3dOb3RpZmljYXRpb24oCiAgICAgICAgICBsYW5ndWFnZSA9PT0gJ2lkJyA/ICdMb2dpbiBiZXJoYXNpbCEnIDogJ0xvZ2luIHN1Y2Nlc3NmdWwhJywKICAgICAgICAgICdzdWNjZXNzJwogICAgICAgICk7CiAgICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ3VzZXJUeXBlJywgdXNlclR5cGUpOwogICAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCd1c2VySWQnLCB1c2VySWQpOwogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gewogICAgICAgICAgaWYgKHVzZXJUeXBlID09PSAnYWRtaW4nKSB7CiAgICAgICAgICAgIG5hdmlnYXRlKCcvYWRtaW4vZGFzaGJvYXJkJyk7CiAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICBuYXZpZ2F0ZSgnL2VtcGxveWVlL2Rhc2hib2FyZCcpOwogICAgICAgICAgfQogICAgICAgIH0sIDUwMCk7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgY29uc3QgZXJyb3JNc2cgPSBkYXRhLmVycm9yIHx8IChsYW5ndWFnZSA9PT0gJ2lkJyA/ICdMb2dpbiBnYWdhbCcgOiAnTG9naW4gZmFpbGVkJyk7CiAgICAgICAgc2V0RXJyb3IoZXJyb3JNc2cpOwogICAgICAgIHNob3dOb3RpZmljYXRpb24oZXJyb3JNc2csICdlcnJvcicpOwogICAgICB9CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgY29uc3QgZXJyb3JNc2cgPSBsYW5ndWFnZSA9PT0gJ2lkJyA/ICdUZXJqYWRpIGtlc2FsYWhhbi4gU2lsYWthbiBjb2JhIGxhZ2kuJyA6ICdBbiBlcnJvciBvY2N1cnJlZC4gUGxlYXNlIHRyeSBhZ2Fpbi4nOwogICAgICBzZXRFcnJvcihlcnJvck1zZyk7CiAgICAgIHNob3dOb3RpZmljYXRpb24oZXJyb3JNc2csICdlcnJvcicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0SXNMb2FkaW5nKGZhbHNlKTsKICAgIH0KICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2BtaW4taC1zY3JlZW4gdy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHB4LTMgcHktNCBzbTpwLTQgcmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTMwMCAkewogICAgICBpc0RhcmtNb2RlIAogICAgICAgID8gJ2JnLWdyYWRpZW50LXRvLWJyIGZyb20tZ3JheS05MDAgdmlhLWdyYXktODAwIHRvLWdyYXktOTAwJyAKICAgICAgICA6ICdiZy1ncmFkaWVudC10by1iIGZyb20tcmVkLTYwMCB2aWEteWVsbG93LTQwMCB0by1yZWQtNjAwJwogICAgfWB9PgogICAgICB7LyogQmFja2dyb3VuZCBkZWNvcmF0aXZlIGVsZW1lbnRzICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBvdmVyZmxvdy1oaWRkZW4gcG9pbnRlci1ldmVudHMtbm9uZSI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BhYnNvbHV0ZSB0b3AtMCBsZWZ0LTAgdy02NCBoLTY0IHNtOnctOTYgc206aC05NiByb3VuZGVkLWZ1bGwgYmx1ci0zeGwgLXRyYW5zbGF0ZS14LTEvMiAtdHJhbnNsYXRlLXktMS8yICR7CiAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLXJlZC01MDAvMTAnIDogJ2JnLXJlZC01MDAvMjAnCiAgICAgICAgfWB9PjwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgYWJzb2x1dGUgYm90dG9tLTAgcmlnaHQtMCB3LTY0IGgtNjQgc206dy05NiBzbTpoLTk2IHJvdW5kZWQtZnVsbCBibHVyLTN4bCB0cmFuc2xhdGUteC0xLzIgdHJhbnNsYXRlLXktMS8yICR7CiAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLW9yYW5nZS02MDAvMTAnIDogJ2JnLW9yYW5nZS02MDAvMjAnCiAgICAgICAgfWB9PjwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBMb2dpbiBjb250YWluZXIgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIHctZnVsbCBtYXgtdy1tZCI+CiAgICAgICAgey8qIExvZ28gKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgganVzdGlmeS1jZW50ZXIgbWItNCBzbTptYi04Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgYmFja2Ryb3AtYmx1ci1zbSByb3VuZGVkLTJ4bCBzbTpyb3VuZGVkLTN4bCBzaGFkb3ctMnhsIG92ZXJmbG93LWhpZGRlbiBib3JkZXItMyBzbTpib3JkZXItNCB3LTY0IHNtOnctODAgJHsKICAgICAgICAgICAgaXNEYXJrTW9kZSAKICAgICAgICAgICAgICA/ICdiZy1ncmF5LTgwMC85NSBib3JkZXItZ3JheS03MDAnIAogICAgICAgICAgICAgIDogJ2JnLXdoaXRlLzk1IGJvcmRlci1ncmF5LTkwMCcKICAgICAgICAgIH1gfT4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgaC0xMiBzbTpoLTE2ICR7CiAgICAgICAgICAgICAgICBpc0RhcmtNb2RlIAogICAgICAgICAgICAgICAgICA/ICdiZy1ncmFkaWVudC10by1iIGZyb20tcmVkLTcwMCB0by1yZWQtODAwJyAKICAgICAgICAgICAgICAgICAgOiAnYmctZ3JhZGllbnQtdG8tYiBmcm9tLXJlZC02MDAgdG8tcmVkLTcwMCcKICAgICAgICAgICAgICB9YH0+PC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BoLTE2IHNtOmgtMjQgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgJHsKICAgICAgICAgICAgICAgIGlzRGFya01vZGUgCiAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYWRpZW50LXRvLWIgZnJvbS15ZWxsb3ctNTAwIHRvLXllbGxvdy02MDAnIAogICAgICAgICAgICAgICAgICA6ICdiZy1ncmFkaWVudC10by1iIGZyb20teWVsbG93LTQwMCB0by15ZWxsb3ctNTAwJwogICAgICAgICAgICAgIH1gfT4KICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtM3hsIHNtOnRleHQtNXhsIGZvbnQtYmxhY2sgdGV4dC1ncmF5LTkwMCB0cmFja2luZy13aWRlciI+TUFMQUtBPC9oMT4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YGgtMTIgc206aC0xNiAkewogICAgICAgICAgICAgICAgaXNEYXJrTW9kZSAKICAgICAgICAgICAgICAgICAgPyAnYmctZ3JhZGllbnQtdG8tYiBmcm9tLXJlZC04MDAgdG8tcmVkLTcwMCcgCiAgICAgICAgICAgICAgICAgIDogJ2JnLWdyYWRpZW50LXRvLWIgZnJvbS1yZWQtNzAwIHRvLXJlZC02MDAnCiAgICAgICAgICAgICAgfWB9PjwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogTG9naW4gZm9ybSBjYXJkICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgYmFja2Ryb3AtYmx1ci1tZCByb3VuZGVkLTJ4bCBzbTpyb3VuZGVkLTN4bCBzaGFkb3ctMnhsIHAtNSBzbTpwLTggYm9yZGVyLTQgJHsKICAgICAgICAgIGlzRGFya01vZGUgCiAgICAgICAgICAgID8gJ2JnLWdyYXktODAwLzk1IGJvcmRlci1ncmF5LTcwMCcgCiAgICAgICAgICAgIDogJ2JnLWdyYWRpZW50LXRvLWJyIGZyb20tb3JhbmdlLTUwLzk1IHRvLW9yYW5nZS0xMDAvOTUgYm9yZGVyLWdyYXktOTAwJwogICAgICAgIH1gfT4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9e2B0ZXh0LWxnIHNtOnRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LWNlbnRlciBtYi00IHNtOm1iLTYgJHsKICAgICAgICAgICAgaXNEYXJrTW9kZSA/ICd0ZXh0LXdoaXRlJyA6ICd0ZXh0LWdyYXktOTAwJwogICAgICAgICAgfWB9PgogICAgICAgICAgICBQVCBNYWxha2EgRXhwcmVzcyBMaW5lCiAgICAgICAgICA8L2gyPgoKICAgICAgICAgIHsvKiBVc2VyIHR5cGUgdG9nZ2xlICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BmbGV4IHJvdW5kZWQteGwgc206cm91bmRlZC0yeGwgb3ZlcmZsb3ctaGlkZGVuIGJvcmRlci0zIHNtOmJvcmRlci00IG1iLTQgc206bWItNiAkewogICAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JvcmRlci1ncmF5LTcwMCcgOiAnYm9yZGVyLWdyYXktOTAwJwogICAgICAgICAgfWB9PgogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0VXNlclR5cGUoJ2FkbWluJyl9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleC0xIHB5LTIuNSBzbTpweS0zIHRleHQtYmFzZSBzbTp0ZXh0LWxnIGZvbnQtYm9sZCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0yMDAgJHsKICAgICAgICAgICAgICAgIHVzZXJUeXBlID09PSAnYWRtaW4nCiAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYWRpZW50LXRvLXIgZnJvbS1yZWQtNjAwIHZpYS15ZWxsb3ctNDAwIHRvLXJlZC02MDAgdGV4dC13aGl0ZSBzaGFkb3ctbGcnCiAgICAgICAgICAgICAgICAgIDogaXNEYXJrTW9kZQogICAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYXktNzAwIHRleHQtZ3JheS0zMDAnCiAgICAgICAgICAgICAgICAgICAgOiAnYmctd2hpdGUgdGV4dC1ncmF5LTcwMCcKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIEFkbWluCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0VXNlclR5cGUoJ2thcnlhd2FuJyl9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleC0xIHB5LTIuNSBzbTpweS0zIHRleHQtYmFzZSBzbTp0ZXh0LWxnIGZvbnQtYm9sZCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0yMDAgJHsKICAgICAgICAgICAgICAgIHVzZXJUeXBlID09PSAna2FyeWF3YW4nCiAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYWRpZW50LXRvLXIgZnJvbS1yZWQtNjAwIHZpYS15ZWxsb3ctNDAwIHRvLXJlZC02MDAgdGV4dC13aGl0ZSBzaGFkb3ctbGcnCiAgICAgICAgICAgICAgICAgIDogaXNEYXJrTW9kZQogICAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYXktNzAwIHRleHQtZ3JheS0zMDAnCiAgICAgICAgICAgICAgICAgICAgOiAnYmctd2hpdGUgdGV4dC1ncmF5LTcwMCcKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtsYW5ndWFnZSA9PT0gJ2lkJyA/ICdLYXJ5YXdhbicgOiAnRW1wbG95ZWUnfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxmb3JtIG9uU3VibWl0PXtoYW5kbGVMb2dpbn0gY2xhc3NOYW1lPSJzcGFjZS15LTQgc206c3BhY2UteS01Ij4KICAgICAgICAgICAgey8qIFVzZXIgSUQgaW5wdXQgKi99CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT17YGJsb2NrIGZvbnQtYm9sZCB0ZXh0LXNtIHNtOnRleHQtYmFzZSBtYi0xLjUgc206bWItMiAkewogICAgICAgICAgICAgICAgaXNEYXJrTW9kZSA/ICd0ZXh0LXdoaXRlJyA6ICd0ZXh0LWdyYXktOTAwJwogICAgICAgICAgICAgIH1gfT4KICAgICAgICAgICAgICAgIHtsYW5ndWFnZSA9PT0gJ2lkJyAKICAgICAgICAgICAgICAgICAgPyBgTWFzdWtrYW4gSUQgJHt1c2VyVHlwZSA9PT0gJ2FkbWluJyA/ICdBZG1pbicgOiAnS2FyeWF3YW4nfWAKICAgICAgICAgICAgICAgICAgOiBgRW50ZXIgJHt1c2VyVHlwZSA9PT0gJ2FkbWluJyA/ICdBZG1pbicgOiAnRW1wbG95ZWUnfSBJRGAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgICAgICAgIHZhbHVlPXt1c2VySWR9CiAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFVzZXJJZChlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj17bGFuZ3VhZ2UgPT09ICdpZCcgCiAgICAgICAgICAgICAgICAgID8gYE1hc3Vra2FuIElEICR7dXNlclR5cGUgPT09ICdhZG1pbicgPyAnQWRtaW4nIDogJ0thcnlhd2FuJ31gCiAgICAgICAgICAgICAgICAgIDogYEVudGVyICR7dXNlclR5cGUgPT09ICdhZG1pbicgPyAnQWRtaW4nIDogJ0VtcGxveWVlJ30gSURgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgcHgtMyBweS0zIHNtOnB4LTQgc206cHktMy41IGJvcmRlci0zIHNtOmJvcmRlci00IHJvdW5kZWQteGwgc206cm91bmRlZC0yeGwgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1yZWQtNTAwIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLXJlZC0yMDAgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMjAwIHRleHQtc20gc206dGV4dC1iYXNlIGZvbnQtYm9sZCAkewogICAgICAgICAgICAgICAgICBpc0RhcmtNb2RlIAogICAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYXktNzAwIGJvcmRlci1ncmF5LTYwMCB0ZXh0LXdoaXRlIHBsYWNlaG9sZGVyLWdyYXktNDAwJyAKICAgICAgICAgICAgICAgICAgICA6ICdiZy13aGl0ZSBib3JkZXItZ3JheS05MDAgdGV4dC1ncmF5LTkwMCBwbGFjZWhvbGRlci1ncmF5LTQwMCcKICAgICAgICAgICAgICAgIH1gfQogICAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgICAvPgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIHsvKiBQYXNzd29yZCBpbnB1dCAqL30KICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPXtgYmxvY2sgZm9udC1ib2xkIHRleHQtc20gc206dGV4dC1iYXNlIG1iLTEuNSBzbTptYi0yICR7CiAgICAgICAgICAgICAgICBpc0RhcmtNb2RlID8gJ3RleHQtd2hpdGUnIDogJ3RleHQtZ3JheS05MDAnCiAgICAgICAgICAgICAgfWB9PgogICAgICAgICAgICAgICAgUGFzc3dvcmQKICAgICAgICAgICAgICA8L2xhYmVsPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSI+CiAgICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgICAgdHlwZT17c2hvd1Bhc3N3b3JkID8gJ3RleHQnIDogJ3Bhc3N3b3JkJ30KICAgICAgICAgICAgICAgICAgdmFsdWU9e3Bhc3N3b3JkfQogICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldFBhc3N3b3JkKGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IuKAouKAouKAouKAouKAouKAouKAouKAoiIKICAgICAgICAgICAgICAgICAgYXV0b0NvbXBsZXRlPSJuZXctcGFzc3dvcmQiCiAgICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBpc0RhcmtNb2RlID8gJyMzNzQxNTEnIDogJyNmZmZmZmYnLAogICAgICAgICAgICAgICAgICAgIGNvbG9yOiBpc0RhcmtNb2RlID8gJyNmZmZmZmYnIDogJyMxMTE4MjcnLAogICAgICAgICAgICAgICAgICAgIFdlYmtpdFRleHRGaWxsQ29sb3I6IGlzRGFya01vZGUgPyAnI2ZmZmZmZicgOiAnIzExMTgyNycsCiAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHctZnVsbCBweC0zIHB5LTMgc206cHgtNCBzbTpweS0zLjUgcHItMTAgc206cHItMTIgYm9yZGVyLTQgcm91bmRlZC14bCBzbTpyb3VuZGVkLTJ4bCBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXJlZC01MDAgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmctcmVkLTIwMCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0yMDAgdGV4dC1zbSBzbTp0ZXh0LWJhc2UgZm9udC1ib2xkICR7CiAgICAgICAgICAgICAgICAgICAgaXNEYXJrTW9kZSAKICAgICAgICAgICAgICAgICAgICAgID8gJ2JnLWdyYXktNzAwIGJvcmRlci1ncmF5LTYwMCB0ZXh0LXdoaXRlIHBsYWNlaG9sZGVyLWdyYXktNDAwJyAKICAgICAgICAgICAgICAgICAgICAgIDogJ2JnLXdoaXRlIGJvcmRlci1ncmF5LTkwMCB0ZXh0LWdyYXktOTAwIHBsYWNlaG9sZGVyLWdyYXktNDAwJwogICAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0U2hvd1Bhc3N3b3JkKCFzaG93UGFzc3dvcmQpfQogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BhYnNvbHV0ZSByaWdodC0zIHNtOnJpZ2h0LTQgdG9wLTEvMiAtdHJhbnNsYXRlLXktMS8yICR7CiAgICAgICAgICAgICAgICAgICAgaXNEYXJrTW9kZSA/ICd0ZXh0LWdyYXktNDAwIGhvdmVyOnRleHQtZ3JheS0zMDAnIDogJ3RleHQtZ3JheS01MDAgaG92ZXI6dGV4dC1ncmF5LTcwMCcKICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIHtzaG93UGFzc3dvcmQgPyA8RXllT2ZmIGNsYXNzTmFtZT0idy00IGgtNCBzbTp3LTUgc206aC01IiAvPiA6IDxFeWUgY2xhc3NOYW1lPSJ3LTQgaC00IHNtOnctNSBzbTpoLTUiIC8+fQogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAge2Vycm9yICYmICgKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YGJvcmRlci0yIHB4LTMgcHktMi41IHNtOnB4LTQgc206cHktMyByb3VuZGVkLXhsIHNtOnJvdW5kZWQtMnhsIHRleHQteHMgc206dGV4dC1zbSAkewogICAgICAgICAgICAgICAgaXNEYXJrTW9kZSAKICAgICAgICAgICAgICAgICAgPyAnYmctcmVkLTkwMC81MCBib3JkZXItcmVkLTcwMCB0ZXh0LXJlZC0zMDAnIAogICAgICAgICAgICAgICAgICA6ICdiZy1yZWQtMTAwIGJvcmRlci1yZWQtNDAwIHRleHQtcmVkLTcwMCcKICAgICAgICAgICAgICB9YH0+CiAgICAgICAgICAgICAgICB7ZXJyb3J9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICl9CgogICAgICAgICAgICB7LyogTG9naW4gYnV0dG9uICovfQogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgdHlwZT0ic3VibWl0IgogICAgICAgICAgICAgIGRpc2FibGVkPXtpc0xvYWRpbmd9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC02MDAgdmlhLXllbGxvdy00MDAgdG8tcmVkLTYwMCB0ZXh0LXdoaXRlIGZvbnQtYm9sZCB0ZXh0LWJhc2Ugc206dGV4dC1sZyBweS0zLjUgc206cHktNCByb3VuZGVkLXhsIHNtOnJvdW5kZWQtMnhsIHNoYWRvdy1sZyBob3ZlcjpzaGFkb3cteGwgYWN0aXZlOnNjYWxlLTk1IGFjdGl2ZTpzaGFkb3ctbWQgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMjAwIGRpc2FibGVkOm9wYWNpdHktNTAgZGlzYWJsZWQ6Y3Vyc29yLW5vdC1hbGxvd2VkIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2lzTG9hZGluZyAKICAgICAgICAgICAgICAgID8gJ0xvYWRpbmcuLi4nIAogICAgICAgICAgICAgICAgOiBsYW5ndWFnZSA9PT0gJ2lkJyAKICAgICAgICAgICAgICAgICAgPyBgTG9naW4gJHt1c2VyVHlwZSA9PT0gJ2FkbWluJyA/ICdBZG1pbicgOiAnS2FyeWF3YW4nfWAKICAgICAgICAgICAgICAgICAgOiBgTG9naW4gYXMgJHt1c2VyVHlwZSA9PT0gJ2FkbWluJyA/ICdBZG1pbicgOiAnRW1wbG95ZWUnfWAKICAgICAgICAgICAgICB9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9mb3JtPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogU2V0dGluZ3MgY29udHJvbHMgYmVsb3cgbG9naW4gZm9ybSAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNCBzbTptdC02Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgdy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC00IHB5LTMgc206cHktMy41IGJvcmRlci0zIHNtOmJvcmRlci00IHJvdW5kZWQteGwgc206cm91bmRlZC0yeGwgZm9udC1ib2xkIHRleHQtc20gc206dGV4dC1iYXNlICR7CiAgICAgICAgICAgIGlzRGFya01vZGUKICAgICAgICAgICAgICA/ICdiZy1ncmF5LTcwMCBib3JkZXItZ3JheS02MDAgdGV4dC13aGl0ZScKICAgICAgICAgICAgICA6ICdiZy13aGl0ZSBib3JkZXItZ3JheS05MDAgdGV4dC1ncmF5LTkwMCcKICAgICAgICAgIH1gfT4KICAgICAgICAgICAgey8qIERhcmsgbW9kZSB0b2dnbGUgKi99CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBvbkNsaWNrPXt0b2dnbGVEYXJrTW9kZX0KICAgICAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHNtOmdhcC0zIGhvdmVyOm9wYWNpdHktODAgdHJhbnNpdGlvbi1vcGFjaXR5IgogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2lzRGFya01vZGUgPyAoCiAgICAgICAgICAgICAgICA8PgogICAgICAgICAgICAgICAgICA8U3VuIGNsYXNzTmFtZT0idy01IGgtNSB0ZXh0LW9yYW5nZS00MDAiIC8+CiAgICAgICAgICAgICAgICAgIDxzcGFuPk1vZGUgVGVyYW5nPC9zcGFuPgogICAgICAgICAgICAgICAgPC8+CiAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgICAgIDxNb29uIGNsYXNzTmFtZT0idy01IGgtNSB0ZXh0LWdyYXktNzAwIiAvPgogICAgICAgICAgICAgICAgICA8c3Bhbj5Nb2RlIEdlbGFwPC9zcGFuPgogICAgICAgICAgICAgICAgPC8+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgPC9idXR0b24+CgogICAgICAgICAgICB7LyogTGFuZ3VhZ2UgdG9nZ2xlICovfQogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0TGFuZ3VhZ2UobGFuZ3VhZ2UgPT09ICdpZCcgPyAnZW4nIDogJ2lkJyl9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBzbTpnYXAtMyBob3ZlcjpvcGFjaXR5LTgwIHRyYW5zaXRpb24tb3BhY2l0eSIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxHbG9iZSBjbGFzc05hbWU9e2B3LTUgaC01ICR7aXNEYXJrTW9kZSA/ICd0ZXh0LW9yYW5nZS00MDAnIDogJ3RleHQtZ3JheS03MDAnfWB9IC8+CiAgICAgICAgICAgICAgPHNwYW4+e2xhbmd1YWdlID09PSAnaWQnID8gJ0lEJyA6ICdFTid9PC9zcGFuPgogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogRGV2ZWxvcGVyIGNyZWRpdCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNCBzbTptdC02IHRleHQtY2VudGVyIj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT17YHRleHQtc20gc206dGV4dC1iYXNlIGZvbnQtYm9sZCB0cmFja2luZy13aWRlICR7CiAgICAgICAgICAgIGlzRGFya01vZGUgPyAndGV4dC13aGl0ZScgOiAndGV4dC1ncmF5LTkwMCcKICAgICAgICAgIH1gfQogICAgICAgICAgc3R5bGU9e3sgZm9udEZhbWlseTogIidJbnRlcicsICdQb3BwaW5zJywgJ01vbnRzZXJyYXQnLCBzYW5zLXNlcmlmIiB9fT4KICAgICAgICAgICAgZGV2ZWxvcGVkIGJ5IDxzcGFuIGNsYXNzTmFtZT0idGV4dC1iYXNlIHNtOnRleHQtbGciPkFsaTwvc3Bhbj4KICAgICAgICAgIDwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
+import { Eye, EyeOff, Moon, Sun, Globe } from 'lucide-react';
+import { useApp } from '@/react-app/contexts/AppContext';
+
+export default function Login() {
+  const navigate = useNavigate();
+  const { isDarkMode, toggleDarkMode, language, setLanguage, showNotification } = useApp();
+  const [userType, setUserType] = useState<'admin' | 'karyawan'>('admin');
+  const [userId, setUserId] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userType, userId, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        showNotification(
+          language === 'id' ? 'Login berhasil!' : 'Login successful!',
+          'success'
+        );
+        localStorage.setItem('userType', userType);
+        localStorage.setItem('userId', userId);
+        setTimeout(() => {
+          if (userType === 'admin') {
+            navigate('/admin/dashboard');
+          } else {
+            navigate('/employee/dashboard');
+          }
+        }, 500);
+      } else {
+        const errorMsg = data.error || (language === 'id' ? 'Login gagal' : 'Login failed');
+        setError(errorMsg);
+        showNotification(errorMsg, 'error');
+      }
+    } catch (err) {
+      const errorMsg = language === 'id' ? 'Terjadi kesalahan. Silakan coba lagi.' : 'An error occurred. Please try again.';
+      setError(errorMsg);
+      showNotification(errorMsg, 'error');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <div className={`min-h-screen w-full flex items-center justify-center px-3 py-4 sm:p-4 relative overflow-hidden transition-all duration-300 ${
+      isDarkMode 
+        ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' 
+        : 'bg-gradient-to-b from-red-600 via-yellow-400 to-red-600'
+    }`}>
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className={`absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 ${
+          isDarkMode ? 'bg-red-500/10' : 'bg-red-500/20'
+        }`}></div>
+        <div className={`absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 ${
+          isDarkMode ? 'bg-orange-600/10' : 'bg-orange-600/20'
+        }`}></div>
+      </div>
+
+      {/* Login container */}
+      <div className="relative z-10 w-full max-w-md">
+        {/* Logo */}
+        <div className="flex justify-center mb-4 sm:mb-8">
+          <div className={`backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border-3 sm:border-4 w-64 sm:w-80 ${
+            isDarkMode 
+              ? 'bg-gray-800/95 border-gray-700' 
+              : 'bg-white/95 border-gray-900'
+          }`}>
+            <div className="flex flex-col">
+              <div className={`h-12 sm:h-16 ${
+                isDarkMode 
+                  ? 'bg-gradient-to-b from-red-700 to-red-800' 
+                  : 'bg-gradient-to-b from-red-600 to-red-700'
+              }`}></div>
+              <div className={`h-16 sm:h-24 flex items-center justify-center ${
+                isDarkMode 
+                  ? 'bg-gradient-to-b from-yellow-500 to-yellow-600' 
+                  : 'bg-gradient-to-b from-yellow-400 to-yellow-500'
+              }`}>
+                <h1 className="text-3xl sm:text-5xl font-black text-gray-900 tracking-wider">MALAKA</h1>
+              </div>
+              <div className={`h-12 sm:h-16 ${
+                isDarkMode 
+                  ? 'bg-gradient-to-b from-red-800 to-red-700' 
+                  : 'bg-gradient-to-b from-red-700 to-red-600'
+              }`}></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Login form card */}
+        <div className={`backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-2xl p-5 sm:p-8 border-4 ${
+          isDarkMode 
+            ? 'bg-gray-800/95 border-gray-700' 
+            : 'bg-gradient-to-br from-orange-50/95 to-orange-100/95 border-gray-900'
+        }`}>
+          <h2 className={`text-lg sm:text-2xl font-bold text-center mb-4 sm:mb-6 ${
+            isDarkMode ? 'text-white' : 'text-gray-900'
+          }`}>
+            PT Malaka Express Line
+          </h2>
+
+          {/* User type toggle */}
+          <div className={`flex rounded-xl sm:rounded-2xl overflow-hidden border-3 sm:border-4 mb-4 sm:mb-6 ${
+            isDarkMode ? 'border-gray-700' : 'border-gray-900'
+          }`}>
+            <button
+              onClick={() => setUserType('admin')}
+              className={`flex-1 py-2.5 sm:py-3 text-base sm:text-lg font-bold transition-all duration-200 ${
+                userType === 'admin'
+                  ? 'bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 text-white shadow-lg'
+                  : isDarkMode
+                    ? 'bg-gray-700 text-gray-300'
+                    : 'bg-white text-gray-700'
+              }`}
+            >
+              Admin
+            </button>
+            <button
+              onClick={() => setUserType('karyawan')}
+              className={`flex-1 py-2.5 sm:py-3 text-base sm:text-lg font-bold transition-all duration-200 ${
+                userType === 'karyawan'
+                  ? 'bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 text-white shadow-lg'
+                  : isDarkMode
+                    ? 'bg-gray-700 text-gray-300'
+                    : 'bg-white text-gray-700'
+              }`}
+            >
+              {language === 'id' ? 'Karyawan' : 'Employee'}
+            </button>
+          </div>
+
+          <form onSubmit={handleLogin} className="space-y-4 sm:space-y-5">
+            {/* User ID input */}
+            <div>
+              <label className={`block font-bold text-sm sm:text-base mb-1.5 sm:mb-2 ${
+                isDarkMode ? 'text-white' : 'text-gray-900'
+              }`}>
+                {language === 'id' 
+                  ? `Masukkan ID ${userType === 'admin' ? 'Admin' : 'Karyawan'}`
+                  : `Enter ${userType === 'admin' ? 'Admin' : 'Employee'} ID`
+                }
+              </label>
+              <input
+                type="text"
+                value={userId}
+                onChange={(e) => setUserId(e.target.value)}
+                placeholder={language === 'id' 
+                  ? `Masukkan ID ${userType === 'admin' ? 'Admin' : 'Karyawan'}`
+                  : `Enter ${userType === 'admin' ? 'Admin' : 'Employee'} ID`
+                }
+                className={`w-full px-3 py-3 sm:px-4 sm:py-3.5 border-3 sm:border-4 rounded-xl sm:rounded-2xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 transition-all duration-200 text-sm sm:text-base font-bold ${
+                  isDarkMode 
+                    ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' 
+                    : 'bg-white border-gray-900 text-gray-900 placeholder-gray-400'
+                }`}
+                required
+              />
+            </div>
+
+            {/* Password input */}
+            <div>
+              <label className={`block font-bold text-sm sm:text-base mb-1.5 sm:mb-2 ${
+                isDarkMode ? 'text-white' : 'text-gray-900'
+              }`}>
+                Password
+              </label>
+              <div className="relative">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="••••••••"
+                  autoComplete="new-password"
+                  style={{
+                    backgroundColor: isDarkMode ? '#374151' : '#ffffff',
+                    color: isDarkMode ? '#ffffff' : '#111827',
+                    WebkitTextFillColor: isDarkMode ? '#ffffff' : '#111827',
+                  }}
+                  className={`w-full px-3 py-3 sm:px-4 sm:py-3.5 pr-10 sm:pr-12 border-4 rounded-xl sm:rounded-2xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-200 transition-all duration-200 text-sm sm:text-base font-bold ${
+                    isDarkMode 
+                      ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' 
+                      : 'bg-white border-gray-900 text-gray-900 placeholder-gray-400'
+                  }`}
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className={`absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 ${
+                    isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4 sm:w-5 sm:h-5" /> : <Eye className="w-4 h-4 sm:w-5 sm:h-5" />}
+                </button>
+              </div>
+            </div>
+
+            {error && (
+              <div className={`border-2 px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-sm ${
+                isDarkMode 
+                  ? 'bg-red-900/50 border-red-700 text-red-300' 
+                  : 'bg-red-100 border-red-400 text-red-700'
+              }`}>
+                {error}
+              </div>
+            )}
+
+            {/* Login button */}
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="w-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 text-white font-bold text-base sm:text-lg py-3.5 sm:py-4 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl active:scale-95 active:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isLoading 
+                ? 'Loading...' 
+                : language === 'id' 
+                  ? `Login ${userType === 'admin' ? 'Admin' : 'Karyawan'}`
+                  : `Login as ${userType === 'admin' ? 'Admin' : 'Employee'}`
+              }
+            </button>
+          </form>
+        </div>
+
+        {/* Settings controls below login form */}
+        <div className="mt-4 sm:mt-6">
+          <div className={`w-full flex items-center justify-between px-4 py-3 sm:py-3.5 border-3 sm:border-4 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base ${
+            isDarkMode
+              ? 'bg-gray-700 border-gray-600 text-white'
+              : 'bg-white border-gray-900 text-gray-900'
+          }`}>
+            {/* Dark mode toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
+            >
+              {isDarkMode ? (
+                <>
+                  <Sun className="w-5 h-5 text-orange-400" />
+                  <span>Mode Terang</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-5 h-5 text-gray-700" />
+                  <span>Mode Gelap</span>
+                </>
+              )}
+            </button>
+
+            {/* Language toggle */}
+            <button
+              onClick={() => setLanguage(language === 'id' ? 'en' : 'id')}
+              className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
+            >
+              <Globe className={`w-5 h-5 ${isDarkMode ? 'text-orange-400' : 'text-gray-700'}`} />
+              <span>{language === 'id' ? 'ID' : 'EN'}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Developer credit */}
+        <div className="mt-4 sm:mt-6 text-center">
+          <p className={`text-sm sm:text-base font-bold tracking-wide ${
+            isDarkMode ? 'text-white' : 'text-gray-900'
+          }`}
+          style={{ fontFamily: "'Inter', 'Poppins', 'Montserrat', sans-serif" }}>
+            developed by <span className="text-base sm:text-lg">Ali</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
