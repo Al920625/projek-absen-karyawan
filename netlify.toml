@@ -1,1 +1,9 @@
-W2J1aWxkXQogIGNvbW1hbmQgPSAibnBtIHJ1biBidWlsZCIKICBwdWJsaXNoID0gImRpc3QiCiAgZnVuY3Rpb25zID0gIm5ldGxpZnkvZnVuY3Rpb25zIgoKW1tyZWRpcmVjdHNdXQogIGZyb20gPSAiL2FwaS8qIgogIHRvID0gIi8ubmV0bGlmeS9mdW5jdGlvbnMvYXBpLzpzcGxhdCIKICBzdGF0dXMgPSAyMDAK
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
