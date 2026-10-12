@@ -1,1 +1,691 @@
-aW1wb3J0IHsgSG9ubyB9IGZyb20gJ2hvbm8nOwppbXBvcnQgeyBjcmVhdGVDbGllbnQsIHR5cGUgU3VwYWJhc2VDbGllbnQgfSBmcm9tICdAc3VwYWJhc2Uvc3VwYWJhc2UtanMnOwppbXBvcnQgYmNyeXB0IGZyb20gJ2JjcnlwdGpzJzsKCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQovLyBQVCBNYWxha2EgRXhwcmVzcyBMaW5lIOKAlCBCYWNrZW5kIEFQSSAoTmV0bGlmeSBGdW5jdGlvbnMpCi8vIERhdGFiYXNlOiBTdXBhYmFzZSAoUG9zdGdyZXMpLiBFbnYgdmFycyAoZGkgTmV0bGlmeSBkYXNoYm9hcmQpOgovLyAgIFNVUEFCQVNFX1VSTCwgU1VQQUJBU0VfU0VSVklDRV9ST0xFX0tFWQovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmNvbnN0IGFwcCA9IG5ldyBIb25vKCk7CgovLyAtLS0tLS0tLS0tIGhlbHBlcnMgLS0tLS0tLS0tLQoKbGV0IF9zYjogU3VwYWJhc2VDbGllbnQgfCBudWxsID0gbnVsbDsKZnVuY3Rpb24gc2IoKTogU3VwYWJhc2VDbGllbnQgewogIGlmIChfc2IpIHJldHVybiBfc2I7CiAgY29uc3QgdXJsID0gcHJvY2Vzcy5lbnYuU1VQQUJBU0VfVVJMOwogIGNvbnN0IGtleSA9IHByb2Nlc3MuZW52LlNVUEFCQVNFX1NFUlZJQ0VfUk9MRV9LRVk7CiAgaWYgKCF1cmwgfHwgIWtleSkgewogICAgdGhyb3cgbmV3IEVycm9yKAogICAgICAnS29uZmlndXJhc2kgc2VydmVyIGJlbHVtIGxlbmdrYXAgKFNVUEFCQVNFX1VSTCAvIFNVUEFCQVNFX1NFUlZJQ0VfUk9MRV9LRVkpLicKICAgICk7CiAgfQogIF9zYiA9IGNyZWF0ZUNsaWVudCh1cmwsIGtleSwgeyBhdXRoOiB7IHBlcnNpc3RTZXNzaW9uOiBmYWxzZSB9IH0pOwogIHJldHVybiBfc2I7Cn0KCi8qKiBUYW5nZ2FsICJoYXJpIGluaSIgZGFsYW0gV0lCLCBmb3JtYXQgWVlZWS1NTS1ERCAqLwpmdW5jdGlvbiB3aWJUb2RheSgpOiBzdHJpbmcgewogIHJldHVybiBuZXcgSW50bC5EYXRlVGltZUZvcm1hdCgnZW4tQ0EnLCB7CiAgICB0aW1lWm9uZTogJ0FzaWEvSmFrYXJ0YScsCiAgICB5ZWFyOiAnbnVtZXJpYycsCiAgICBtb250aDogJzItZGlnaXQnLAogICAgZGF5OiAnMi1kaWdpdCcsCiAgfSkuZm9ybWF0KG5ldyBEYXRlKCkpOwp9CgovKiogV2FrdHUgc2VrYXJhbmcgKElTTyBVVEMpIHVudHVrIGtvbG9tIHRpbWVzdGFtcHR6ICovCmZ1bmN0aW9uIG5vd0lzbygpOiBzdHJpbmcgewogIHJldHVybiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7Cn0KCi8qKiBSZXZlcnNlLWdlb2NvZGUgZGkgc2VydmVyIChkaXBpbmRhaCBkYXJpIGJyb3dzZXIpLiAqLwphc3luYyBmdW5jdGlvbiByZXZlcnNlR2VvY29kZShsYXQ6IG51bWJlciwgbG9uOiBudW1iZXIpOiBQcm9taXNlPHN0cmluZyB8IG51bGw+IHsKICB0cnkgewogICAgY29uc3QgY3RybCA9IG5ldyBBYm9ydENvbnRyb2xsZXIoKTsKICAgIGNvbnN0IHQgPSBzZXRUaW1lb3V0KCgpID0+IGN0cmwuYWJvcnQoKSwgODAwMCk7CiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgKICAgICAgYGh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3JldmVyc2U/Zm9ybWF0PWpzb24mbGF0PSR7bGF0fSZsb249JHtsb259Jnpvb209MTgmYWRkcmVzc2RldGFpbHM9MWAsCiAgICAgIHsgaGVhZGVyczogeyAnVXNlci1BZ2VudCc6ICdNYWxha2EtQXR0ZW5kYW5jZS1BcHAvMS4wJyB9LCBzaWduYWw6IGN0cmwuc2lnbmFsIH0KICAgICk7CiAgICBjbGVhclRpbWVvdXQodCk7CiAgICBpZiAoIXJlcy5vaykgcmV0dXJuIG51bGw7CiAgICBjb25zdCBkYXRhID0gKGF3YWl0IHJlcy5qc29uKCkpIGFzIHsgZGlzcGxheV9uYW1lPzogc3RyaW5nIH07CiAgICByZXR1cm4gZGF0YS5kaXNwbGF5X25hbWUgPz8gbnVsbDsKICB9IGNhdGNoIHsKICAgIHJldHVybiBudWxsOwogIH0KfQoKZnVuY3Rpb24gZXJyKGM6IGFueSwgbWVzc2FnZTogc3RyaW5nLCBzdGF0dXMgPSA0MDApIHsKICByZXR1cm4gYy5qc29uKHsgZXJyb3I6IG1lc3NhZ2UgfSwgc3RhdHVzKTsKfQoKLy8gLS0tLS0tLS0tLSBoZWFsdGggLS0tLS0tLS0tLQoKYXBwLmdldCgnL2FwaS9oZWFsdGgnLCAoYykgPT4gewogIHJldHVybiBjLmpzb24oeyBzdGF0dXM6ICdvaycsIHRpbWVzdGFtcDogbm93SXNvKCkgfSk7Cn0pOwoKLy8gLS0tLS0tLS0tLSBhdXRoIC0tLS0tLS0tLS0KCmFzeW5jIGZ1bmN0aW9uIGxvZ2luSGFuZGxlcihjOiBhbnkpIHsKICBsZXQgYm9keTogYW55OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgYy5yZXEuanNvbigpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgY29uc3QgeyB1c2VyVHlwZSwgdXNlcklkLCBwYXNzd29yZCB9ID0gYm9keSA/PyB7fTsKICBpZiAodXNlclR5cGUgIT09ICdhZG1pbicgJiYgdXNlclR5cGUgIT09ICdrYXJ5YXdhbicpIHsKICAgIHJldHVybiBlcnIoYywgJ1RpcGUgcGVuZ2d1bmEgdGlkYWsgdmFsaWQuJyk7CiAgfQogIGlmICghdXNlcklkIHx8ICFwYXNzd29yZCkgewogICAgcmV0dXJuIGVycihjLCAnSUQgZGFuIHBhc3N3b3JkIHdhamliIGRpaXNpLicpOwogIH0KCiAgdHJ5IHsKICAgIGNvbnN0IHRhYmxlID0gdXNlclR5cGUgPT09ICdhZG1pbicgPyAnYWRtaW5zJyA6ICdlbXBsb3llZXMnOwogICAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IoKQogICAgICAuZnJvbSh0YWJsZSkKICAgICAgLnNlbGVjdCgnaWQsIHVzZXJfaWQsIG5hbWUsIGVtYWlsLCBwYXNzd29yZF9oYXNoLCBpc19hY3RpdmUnKQogICAgICAuZXEoJ3VzZXJfaWQnLCBTdHJpbmcodXNlcklkKSkKICAgICAgLmVxKCdpc19hY3RpdmUnLCB0cnVlKQogICAgICAubWF5YmVTaW5nbGUoKTsKCiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgaWYgKCFkYXRhKSB7CiAgICAgIHJldHVybiBlcnIoCiAgICAgICAgYywKICAgICAgICB1c2VyVHlwZSA9PT0gJ2FkbWluJyA/ICdJRCBBZG1pbiBhdGF1IHBhc3N3b3JkIHNhbGFoJyA6ICdJRCBLYXJ5YXdhbiBhdGF1IHBhc3N3b3JkIHNhbGFoJywKICAgICAgICA0MDEKICAgICAgKTsKICAgIH0KICAgIGNvbnN0IG9rID0gYXdhaXQgYmNyeXB0LmNvbXBhcmUoU3RyaW5nKHBhc3N3b3JkKSwgZGF0YS5wYXNzd29yZF9oYXNoKTsKICAgIGlmICghb2spIHsKICAgICAgcmV0dXJuIGVycigKICAgICAgICBjLAogICAgICAgIHVzZXJUeXBlID09PSAnYWRtaW4nID8gJ0lEIEFkbWluIGF0YXUgcGFzc3dvcmQgc2FsYWgnIDogJ0lEIEthcnlhd2FuIGF0YXUgcGFzc3dvcmQgc2FsYWgnLAogICAgICAgIDQwMQogICAgICApOwogICAgfQogICAgY29uc3QgeyBwYXNzd29yZF9oYXNoOiBfcGgsIC4uLnVzZXIgfSA9IGRhdGE7CiAgICByZXR1cm4gYy5qc29uKHsgc3VjY2VzczogdHJ1ZSwgdXNlciB9KTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0xvZ2luIGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCBlLm1lc3NhZ2UgfHwgJ1RlcmphZGkga2VzYWxhaGFuIHNlcnZlci4nLCA1MDApOwogIH0KfQoKLy8gS29udHJhayBmcm9udGVuZDogUE9TVCAvYXBpL2xvZ2luCmFwcC5wb3N0KCcvYXBpL2xvZ2luJywgbG9naW5IYW5kbGVyKTsKLy8gQWxpYXMgc2VzdWFpIHNwZXNpZmlrYXNpCmFwcC5wb3N0KCcvYXBpL2F1dGgvbG9naW4nLCBsb2dpbkhhbmRsZXIpOwoKLy8gLS0tLS0tLS0tLSBzdGF0cyAoYWRtaW4gZGFzaGJvYXJkKSAtLS0tLS0tLS0tCgphcHAuZ2V0KCcvYXBpL3N0YXRzJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgdG9kYXkgPSB3aWJUb2RheSgpOwogICAgY29uc3QgZGIgPSBzYigpOwoKICAgIGNvbnN0IFt7IGNvdW50OiB0b3RhbEVtcGxveWVlcyB9LCB7IGRhdGE6IHByZXNlbnQgfSwgeyBjb3VudDogcGVuZGluZ0xlYXZlIH0sIHsgY291bnQ6IHRvdGFsQWRtaW5zIH1dID0KICAgICAgYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgICAgIGRiLmZyb20oJ2VtcGxveWVlcycpLnNlbGVjdCgnaWQnLCB7IGNvdW50OiAnZXhhY3QnLCBoZWFkOiB0cnVlIH0pLmVxKCdpc19hY3RpdmUnLCB0cnVlKSwKICAgICAgICBkYi5mcm9tKCdhdHRlbmRhbmNlJykuc2VsZWN0KCdlbXBsb3llZV9pZCcpLmVxKCdkYXRlJywgdG9kYXkpLAogICAgICAgIGRiLmZyb20oJ2xlYXZlX3JlcXVlc3RzJykuc2VsZWN0KCdpZCcsIHsgY291bnQ6ICdleGFjdCcsIGhlYWQ6IHRydWUgfSkuZXEoJ3N0YXR1cycsICdwZW5kaW5nJyksCiAgICAgICAgZGIuZnJvbSgnYWRtaW5zJykuc2VsZWN0KCdpZCcsIHsgY291bnQ6ICdleGFjdCcsIGhlYWQ6IHRydWUgfSkuZXEoJ2lzX2FjdGl2ZScsIHRydWUpLAogICAgICBdKTsKCiAgICBjb25zdCBwcmVzZW50VG9kYXkgPSBuZXcgU2V0KChwcmVzZW50ID8/IFtdKS5tYXAoKHI6IGFueSkgPT4gci5lbXBsb3llZV9pZCkpLnNpemU7CgogICAgcmV0dXJuIGMuanNvbih7CiAgICAgIHRvdGFsRW1wbG95ZWVzOiB0b3RhbEVtcGxveWVlcyA/PyAwLAogICAgICBwcmVzZW50VG9kYXksCiAgICAgIHBlbmRpbmdMZWF2ZTogcGVuZGluZ0xlYXZlID8/IDAsCiAgICAgIHRvdGFsQWRtaW5zOiB0b3RhbEFkbWlucyA/PyAwLAogICAgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdTdGF0cyBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbXVhdCBzdGF0aXN0aWsuJywgNTAwKTsKICB9Cn0pOwoKLy8gLS0tLS0tLS0tLSBlbXBsb3llZXMgLS0tLS0tLS0tLQoKYXBwLmdldCgnL2FwaS9lbXBsb3llZXMnLCBhc3luYyAoYykgPT4gewogIHRyeSB7CiAgICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYigpCiAgICAgIC5mcm9tKCdlbXBsb3llZXMnKQogICAgICAuc2VsZWN0KCdpZCwgdXNlcl9pZCwgbmFtZSwgZW1haWwsIHBob25lLCBwb3NpdGlvbiwgZGVwYXJ0bWVudCwgcGhvdG9fdXJsLCBpc19hY3RpdmUsIGNyZWF0ZWRfYXQnKQogICAgICAub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgLy8gU2FtYWthbiBrb250cmFrIGZyb250ZW5kIGxhbWE6IGVtcGxveWVlX2lkID0gdXNlcl9pZCAoc3RyaW5nKQogICAgcmV0dXJuIGMuanNvbigKICAgICAgKGRhdGEgPz8gW10pLm1hcCgoZTogYW55KSA9PiAoeyAuLi5lLCBlbXBsb3llZV9pZDogZS51c2VyX2lkIH0pKQogICAgKTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0VtcGxveWVlcyBsaXN0IGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVtdWF0IGRhdGEga2FyeWF3YW4uJywgNTAwKTsKICB9Cn0pOwoKYXBwLnBvc3QoJy9hcGkvZW1wbG95ZWVzJywgYXN5bmMgKGMpID0+IHsKICBsZXQgYm9keTogYW55OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgYy5yZXEuanNvbigpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgY29uc3QgeyBlbXBsb3llZV9pZCwgdXNlcl9pZCwgbmFtZSwgZW1haWwsIHBob25lLCBwb3NpdGlvbiwgZGVwYXJ0bWVudCwgcGFzc3dvcmQgfSA9IGJvZHkgPz8ge307CiAgY29uc3QgdWlkID0gU3RyaW5nKGVtcGxveWVlX2lkID8/IHVzZXJfaWQgPz8gJycpLnRyaW0oKTsKICBpZiAoIXVpZCB8fCAhbmFtZSB8fCAhcGFzc3dvcmQpIHsKICAgIHJldHVybiBlcnIoYywgJ0lELCBuYW1hLCBkYW4gcGFzc3dvcmQgd2FqaWIgZGlpc2kuJyk7CiAgfQogIHRyeSB7CiAgICBjb25zdCBkYiA9IHNiKCk7CiAgICBjb25zdCB7IGRhdGE6IGV4aXN0aW5nIH0gPSBhd2FpdCBkYgogICAgICAuZnJvbSgnZW1wbG95ZWVzJykKICAgICAgLnNlbGVjdCgnaWQnKQogICAgICAuZXEoJ3VzZXJfaWQnLCB1aWQpCiAgICAgIC5tYXliZVNpbmdsZSgpOwogICAgaWYgKGV4aXN0aW5nKSByZXR1cm4gZXJyKGMsICdJRCBrYXJ5YXdhbiBzdWRhaCBkaWd1bmFrYW4uJyk7CgogICAgY29uc3QgcGFzc3dvcmRfaGFzaCA9IGF3YWl0IGJjcnlwdC5oYXNoKFN0cmluZyhwYXNzd29yZCksIDEwKTsKICAgIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IGRiLmZyb20oJ2VtcGxveWVlcycpLmluc2VydCh7CiAgICAgIHVzZXJfaWQ6IHVpZCwKICAgICAgbmFtZTogU3RyaW5nKG5hbWUpLnRyaW0oKSwKICAgICAgZW1haWw6IGVtYWlsID8gU3RyaW5nKGVtYWlsKS50cmltKCkgOiBudWxsLAogICAgICBwaG9uZTogcGhvbmUgPyBTdHJpbmcocGhvbmUpLnRyaW0oKSA6IG51bGwsCiAgICAgIHBvc2l0aW9uOiBwb3NpdGlvbiA/IFN0cmluZyhwb3NpdGlvbikudHJpbSgpIDogbnVsbCwKICAgICAgZGVwYXJ0bWVudDogZGVwYXJ0bWVudCA/IFN0cmluZyhkZXBhcnRtZW50KS50cmltKCkgOiBudWxsLAogICAgICBwYXNzd29yZF9oYXNoLAogICAgfSk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdFbXBsb3llZSBjcmVhdGUgZXJyb3I6JywgZSk7CiAgICByZXR1cm4gZXJyKGMsICdHYWdhbCBtZW5hbWJhaCBrYXJ5YXdhbi4nLCA1MDApOwogIH0KfSk7CgphcHAucHV0KCcvYXBpL2VtcGxveWVlcy86aWQnLCBhc3luYyAoYykgPT4gewogIGNvbnN0IGlkID0gYy5yZXEucGFyYW0oJ2lkJyk7CiAgbGV0IGJvZHk6IGFueTsKICB0cnkgewogICAgYm9keSA9IGF3YWl0IGMucmVxLmpzb24oKTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBlcnIoYywgJ1Blcm1pbnRhYW4gdGlkYWsgdmFsaWQuJyk7CiAgfQogIGNvbnN0IHsgbmFtZSwgZW1haWwsIHBob25lLCBwb3NpdGlvbiwgZGVwYXJ0bWVudCwgcGFzc3dvcmQgfSA9IGJvZHkgPz8ge307CiAgaWYgKCFuYW1lKSByZXR1cm4gZXJyKGMsICdOYW1hIHdhamliIGRpaXNpLicpOwogIHRyeSB7CiAgICBjb25zdCBkYiA9IHNiKCk7CiAgICBjb25zdCBwYXRjaDogYW55ID0gewogICAgICBuYW1lOiBTdHJpbmcobmFtZSkudHJpbSgpLAogICAgICBlbWFpbDogZW1haWwgPyBTdHJpbmcoZW1haWwpLnRyaW0oKSA6IG51bGwsCiAgICAgIHBob25lOiBwaG9uZSA/IFN0cmluZyhwaG9uZSkudHJpbSgpIDogbnVsbCwKICAgICAgcG9zaXRpb246IHBvc2l0aW9uID8gU3RyaW5nKHBvc2l0aW9uKS50cmltKCkgOiBudWxsLAogICAgICBkZXBhcnRtZW50OiBkZXBhcnRtZW50ID8gU3RyaW5nKGRlcGFydG1lbnQpLnRyaW0oKSA6IG51bGwsCiAgICB9OwogICAgaWYgKHBhc3N3b3JkKSBwYXRjaC5wYXNzd29yZF9oYXNoID0gYXdhaXQgYmNyeXB0Lmhhc2goU3RyaW5nKHBhc3N3b3JkKSwgMTApOwogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgZGIuZnJvbSgnZW1wbG95ZWVzJykudXBkYXRlKHBhdGNoKS5lcSgnaWQnLCBpZCk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdFbXBsb3llZSB1cGRhdGUgZXJyb3I6JywgZSk7CiAgICByZXR1cm4gZXJyKGMsICdHYWdhbCBtZW1wZXJiYXJ1aSBrYXJ5YXdhbi4nLCA1MDApOwogIH0KfSk7CgovLyBEYWZ0YXJrYW4gcm91dGUgc3Blc2lmaWsgU0VCRUxVTSA6aWQgYWdhciB0aWRhayB0ZXJ0ZWxhbiBwYXJhbQphcHAuZGVsZXRlKCcvYXBpL2VtcGxveWVlcy9kZWxldGUtYWxsJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgZGIgPSBzYigpOwogICAgYXdhaXQgZGIuZnJvbSgnYXR0ZW5kYW5jZScpLmRlbGV0ZSgpLm5lcSgnaWQnLCAnMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwJyk7CiAgICBhd2FpdCBkYi5mcm9tKCdsZWF2ZV9yZXF1ZXN0cycpLmRlbGV0ZSgpLm5lcSgnaWQnLCAnMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwJyk7CiAgICBhd2FpdCBkYi5mcm9tKCdub3RpZmljYXRpb25zJykuZGVsZXRlKCkubmVxKCdpZCcsICcwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAnKTsKICAgIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IGRiLmZyb20oJ2VtcGxveWVlcycpLmRlbGV0ZSgpLm5lcSgnaWQnLCAnMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwJyk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdFbXBsb3llZXMgZGVsZXRlLWFsbCBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbmdoYXB1cyBzZW11YSBrYXJ5YXdhbi4nLCA1MDApOwogIH0KfSk7CgphcHAuZGVsZXRlKCcvYXBpL2VtcGxveWVlcy86aWQnLCBhc3luYyAoYykgPT4gewogIGNvbnN0IGlkID0gYy5yZXEucGFyYW0oJ2lkJyk7CiAgdHJ5IHsKICAgIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IHNiKCkuZnJvbSgnZW1wbG95ZWVzJykuZGVsZXRlKCkuZXEoJ2lkJywgaWQpOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBjLmpzb24oeyBzdWNjZXNzOiB0cnVlIH0pOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignRW1wbG95ZWUgZGVsZXRlIGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVuZ2hhcHVzIGthcnlhd2FuLicsIDUwMCk7CiAgfQp9KTsKCi8vIC0tLS0tLS0tLS0gYWRtaW5zIC0tLS0tLS0tLS0KCmFwcC5nZXQoJy9hcGkvYWRtaW5zJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IoKQogICAgICAuZnJvbSgnYWRtaW5zJykKICAgICAgLnNlbGVjdCgnaWQsIHVzZXJfaWQsIG5hbWUsIGVtYWlsLCBpc19hY3RpdmUsIGNyZWF0ZWRfYXQnKQogICAgICAub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbigoZGF0YSA/PyBbXSkubWFwKChhOiBhbnkpID0+ICh7IC4uLmEsIGFkbWluX2lkOiBhLnVzZXJfaWQgfSkpKTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0FkbWlucyBsaXN0IGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVtdWF0IGRhdGEgYWRtaW4uJywgNTAwKTsKICB9Cn0pOwoKYXBwLnBvc3QoJy9hcGkvYWRtaW5zJywgYXN5bmMgKGMpID0+IHsKICBsZXQgYm9keTogYW55OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgYy5yZXEuanNvbigpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgY29uc3QgeyBhZG1pbl9pZCwgdXNlcl9pZCwgbmFtZSwgZW1haWwsIHBhc3N3b3JkIH0gPSBib2R5ID8/IHt9OwogIGNvbnN0IHVpZCA9IFN0cmluZyhhZG1pbl9pZCA/PyB1c2VyX2lkID8/ICcnKS50cmltKCk7CiAgaWYgKCF1aWQgfHwgIW5hbWUgfHwgIXBhc3N3b3JkKSB7CiAgICByZXR1cm4gZXJyKGMsICdJRCwgbmFtYSwgZGFuIHBhc3N3b3JkIHdhamliIGRpaXNpLicpOwogIH0KICB0cnkgewogICAgY29uc3QgZGIgPSBzYigpOwogICAgY29uc3QgeyBkYXRhOiBleGlzdGluZyB9ID0gYXdhaXQgZGIuZnJvbSgnYWRtaW5zJykuc2VsZWN0KCdpZCcpLmVxKCd1c2VyX2lkJywgdWlkKS5tYXliZVNpbmdsZSgpOwogICAgaWYgKGV4aXN0aW5nKSByZXR1cm4gZXJyKGMsICdJRCBhZG1pbiBzdWRhaCBkaWd1bmFrYW4uJyk7CiAgICBjb25zdCBwYXNzd29yZF9oYXNoID0gYXdhaXQgYmNyeXB0Lmhhc2goU3RyaW5nKHBhc3N3b3JkKSwgMTApOwogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgZGIuZnJvbSgnYWRtaW5zJykuaW5zZXJ0KHsKICAgICAgdXNlcl9pZDogdWlkLAogICAgICBuYW1lOiBTdHJpbmcobmFtZSkudHJpbSgpLAogICAgICBlbWFpbDogZW1haWwgPyBTdHJpbmcoZW1haWwpLnRyaW0oKSA6IG51bGwsCiAgICAgIHBhc3N3b3JkX2hhc2gsCiAgICB9KTsKICAgIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgICByZXR1cm4gYy5qc29uKHsgc3VjY2VzczogdHJ1ZSB9KTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0FkbWluIGNyZWF0ZSBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbmFtYmFoIGFkbWluLicsIDUwMCk7CiAgfQp9KTsKCmFwcC5wdXQoJy9hcGkvYWRtaW5zLzppZCcsIGFzeW5jIChjKSA9PiB7CiAgY29uc3QgaWQgPSBjLnJlcS5wYXJhbSgnaWQnKTsKICBsZXQgYm9keTogYW55OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgYy5yZXEuanNvbigpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgY29uc3QgeyBuYW1lLCBlbWFpbCwgcGFzc3dvcmQgfSA9IGJvZHkgPz8ge307CiAgaWYgKCFuYW1lKSByZXR1cm4gZXJyKGMsICdOYW1hIHdhamliIGRpaXNpLicpOwogIHRyeSB7CiAgICBjb25zdCBkYiA9IHNiKCk7CiAgICBjb25zdCBwYXRjaDogYW55ID0gewogICAgICBuYW1lOiBTdHJpbmcobmFtZSkudHJpbSgpLAogICAgICBlbWFpbDogZW1haWwgPyBTdHJpbmcoZW1haWwpLnRyaW0oKSA6IG51bGwsCiAgICB9OwogICAgaWYgKHBhc3N3b3JkKSBwYXRjaC5wYXNzd29yZF9oYXNoID0gYXdhaXQgYmNyeXB0Lmhhc2goU3RyaW5nKHBhc3N3b3JkKSwgMTApOwogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgZGIuZnJvbSgnYWRtaW5zJykudXBkYXRlKHBhdGNoKS5lcSgnaWQnLCBpZCk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdBZG1pbiB1cGRhdGUgZXJyb3I6JywgZSk7CiAgICByZXR1cm4gZXJyKGMsICdHYWdhbCBtZW1wZXJiYXJ1aSBhZG1pbi4nLCA1MDApOwogIH0KfSk7CgphcHAuZGVsZXRlKCcvYXBpL2FkbWlucy9kZWxldGUtYWxsJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc2IoKQogICAgICAuZnJvbSgnYWRtaW5zJykKICAgICAgLmRlbGV0ZSgpCiAgICAgIC5uZXEoJ2lkJywgJzAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCcpOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBjLmpzb24oeyBzdWNjZXNzOiB0cnVlIH0pOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignQWRtaW5zIGRlbGV0ZS1hbGwgZXJyb3I6JywgZSk7CiAgICByZXR1cm4gZXJyKGMsICdHYWdhbCBtZW5naGFwdXMgc2VtdWEgYWRtaW4uJywgNTAwKTsKICB9Cn0pOwoKYXBwLmRlbGV0ZSgnL2FwaS9hZG1pbnMvOmlkJywgYXN5bmMgKGMpID0+IHsKICBjb25zdCBpZCA9IGMucmVxLnBhcmFtKCdpZCcpOwogIHRyeSB7CiAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzYigpLmZyb20oJ2FkbWlucycpLmRlbGV0ZSgpLmVxKCdpZCcsIGlkKTsKICAgIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgICByZXR1cm4gYy5qc29uKHsgc3VjY2VzczogdHJ1ZSB9KTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0FkbWluIGRlbGV0ZSBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbmdoYXB1cyBhZG1pbi4nLCA1MDApOwogIH0KfSk7CgovLyAtLS0tLS0tLS0tIGF0dGVuZGFuY2UgLS0tLS0tLS0tLQoKYXBwLmdldCgnL2FwaS9hdHRlbmRhbmNlJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgZGF0ZSA9IGMucmVxLnF1ZXJ5KCdkYXRlJyk7CiAgICBsZXQgcSA9IHNiKCkKICAgICAgLmZyb20oJ2F0dGVuZGFuY2UnKQogICAgICAuc2VsZWN0KAogICAgICAgICdpZCwgZW1wbG95ZWVfaWQsIGRhdGUsIGNsb2NrX2luLCBjbG9ja19vdXQsIGNsb2NrX2luX3Bob3RvLCBjbG9ja19vdXRfcGhvdG8sIGxhdGl0dWRlLCBsb25naXR1ZGUsIGFkZHJlc3MsIHN0YXR1cywgbm90ZXMsIGNyZWF0ZWRfYXQsIGVtcGxveWVlcyFpbm5lciAodXNlcl9pZCwgbmFtZSknCiAgICAgICkKICAgICAgLm9yZGVyKCdjcmVhdGVkX2F0JywgeyBhc2NlbmRpbmc6IGZhbHNlIH0pCiAgICAgIC5saW1pdCgxMDApOwogICAgaWYgKGRhdGUpIHEgPSBxLmVxKCdkYXRlJywgZGF0ZSk7CiAgICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBxOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBjLmpzb24oCiAgICAgIChkYXRhID8/IFtdKS5tYXAoKHI6IGFueSkgPT4gKHsKICAgICAgICAuLi5yLAogICAgICAgIGVtcGxveWVlX2lkOiByLmVtcGxveWVlcz8udXNlcl9pZCwKICAgICAgICBlbXBsb3llZV9uYW1lOiByLmVtcGxveWVlcz8ubmFtZSwKICAgICAgfSkpCiAgICApOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignQXR0ZW5kYW5jZSBsaXN0IGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVtdWF0IGRhdGEgYWJzZW5zaS4nLCA1MDApOwogIH0KfSk7CgphcHAuZ2V0KCcvYXBpL2F0dGVuZGFuY2Uvc3RhdHVzJywgYXN5bmMgKGMpID0+IHsKICBjb25zdCB1c2VySWQgPSBjLnJlcS5xdWVyeSgndXNlcklkJyk7CiAgaWYgKCF1c2VySWQpIHJldHVybiBlcnIoYywgJ1VzZXIgSUQgd2FqaWIgZGlpc2kuJyk7CiAgdHJ5IHsKICAgIGNvbnN0IGRiID0gc2IoKTsKICAgIGNvbnN0IHsgZGF0YTogZW1wIH0gPSBhd2FpdCBkYgogICAgICAuZnJvbSgnZW1wbG95ZWVzJykKICAgICAgLnNlbGVjdCgnaWQnKQogICAgICAuZXEoJ3VzZXJfaWQnLCBTdHJpbmcodXNlcklkKSkKICAgICAgLm1heWJlU2luZ2xlKCk7CiAgICBpZiAoIWVtcCkgcmV0dXJuIGVycihjLCAnS2FyeWF3YW4gdGlkYWsgZGl0ZW11a2FuLicsIDQwNCk7CgogICAgY29uc3QgeyBkYXRhOiBhdHQgfSA9IGF3YWl0IGRiCiAgICAgIC5mcm9tKCdhdHRlbmRhbmNlJykKICAgICAgLnNlbGVjdCgnKicpCiAgICAgIC5lcSgnZW1wbG95ZWVfaWQnLCBlbXAuaWQpCiAgICAgIC5lcSgnZGF0ZScsIHdpYlRvZGF5KCkpCiAgICAgIC5vcmRlcignY3JlYXRlZF9hdCcsIHsgYXNjZW5kaW5nOiBmYWxzZSB9KQogICAgICAubGltaXQoMSkKICAgICAgLm1heWJlU2luZ2xlKCk7CgogICAgY29uc3QgaXNDbG9ja2VkSW4gPSAhIShhdHQgJiYgYXR0LmNsb2NrX2luICYmICFhdHQuY2xvY2tfb3V0KTsKICAgIHJldHVybiBjLmpzb24oeyBpc0Nsb2NrZWRJbiwgYXR0ZW5kYW5jZTogYXR0ID8/IG51bGwgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdBdHRlbmRhbmNlIHN0YXR1cyBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbWVyaWtzYSBzdGF0dXMgYWJzZW5zaS4nLCA1MDApOwogIH0KfSk7CgphcHAucG9zdCgnL2FwaS9hdHRlbmRhbmNlL2Nsb2NrJywgYXN5bmMgKGMpID0+IHsKICBsZXQgYm9keTogYW55OwogIHRyeSB7CiAgICBib2R5ID0gYXdhaXQgYy5yZXEuanNvbigpOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgY29uc3QgeyB1c2VySWQsIGFjdGlvbiwgcGhvdG8sIGxhdGl0dWRlLCBsb25naXR1ZGUsIGFkZHJlc3MgfSA9IGJvZHkgPz8ge307CiAgaWYgKCF1c2VySWQgfHwgKGFjdGlvbiAhPT0gJ2luJyAmJiBhY3Rpb24gIT09ICdvdXQnKSkgewogICAgcmV0dXJuIGVycihjLCAnUGVybWludGFhbiB0aWRhayB2YWxpZC4nKTsKICB9CiAgdHJ5IHsKICAgIGNvbnN0IGRiID0gc2IoKTsKICAgIGNvbnN0IHsgZGF0YTogZW1wIH0gPSBhd2FpdCBkYgogICAgICAuZnJvbSgnZW1wbG95ZWVzJykKICAgICAgLnNlbGVjdCgnaWQsIGlzX2FjdGl2ZScpCiAgICAgIC5lcSgndXNlcl9pZCcsIFN0cmluZyh1c2VySWQpKQogICAgICAubWF5YmVTaW5nbGUoKTsKICAgIGlmICghZW1wIHx8ICFlbXAuaXNfYWN0aXZlKSByZXR1cm4gZXJyKGMsICdLYXJ5YXdhbiB0aWRhayBkaXRlbXVrYW4uJywgNDA0KTsKCiAgICBjb25zdCB0b2RheSA9IHdpYlRvZGF5KCk7CgogICAgaWYgKGFjdGlvbiA9PT0gJ2luJykgewogICAgICBjb25zdCB7IGRhdGE6IG9wZW4gfSA9IGF3YWl0IGRiCiAgICAgICAgLmZyb20oJ2F0dGVuZGFuY2UnKQogICAgICAgIC5zZWxlY3QoJ2lkJykKICAgICAgICAuZXEoJ2VtcGxveWVlX2lkJywgZW1wLmlkKQogICAgICAgIC5lcSgnZGF0ZScsIHRvZGF5KQogICAgICAgIC5pcygnY2xvY2tfb3V0JywgbnVsbCkKICAgICAgICAubGltaXQoMSkKICAgICAgICAubWF5YmVTaW5nbGUoKTsKICAgICAgaWYgKG9wZW4pIHJldHVybiBlcnIoYywgJ0FuZGEgc3VkYWggY2xvY2sgaW4gaGFyaSBpbmkuJyk7CgogICAgICBsZXQgYWRkcjogc3RyaW5nIHwgbnVsbCA9IGFkZHJlc3MgPyBTdHJpbmcoYWRkcmVzcykgOiBudWxsOwogICAgICBjb25zdCBsYXQgPSB0eXBlb2YgbGF0aXR1ZGUgPT09ICdudW1iZXInID8gbGF0aXR1ZGUgOiBudWxsOwogICAgICBjb25zdCBsb24gPSB0eXBlb2YgbG9uZ2l0dWRlID09PSAnbnVtYmVyJyA/IGxvbmdpdHVkZSA6IG51bGw7CiAgICAgIGlmICghYWRkciAmJiBsYXQgIT09IG51bGwgJiYgbG9uICE9PSBudWxsKSB7CiAgICAgICAgYWRkciA9IGF3YWl0IHJldmVyc2VHZW9jb2RlKGxhdCwgbG9uKTsKICAgICAgfQoKICAgICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgZGIuZnJvbSgnYXR0ZW5kYW5jZScpLmluc2VydCh7CiAgICAgICAgZW1wbG95ZWVfaWQ6IGVtcC5pZCwKICAgICAgICBkYXRlOiB0b2RheSwKICAgICAgICBjbG9ja19pbjogbm93SXNvKCksCiAgICAgICAgY2xvY2tfaW5fcGhvdG86IHBob3RvID8gU3RyaW5nKHBob3RvKSA6IG51bGwsCiAgICAgICAgbGF0aXR1ZGU6IGxhdCwKICAgICAgICBsb25naXR1ZGU6IGxvbiwKICAgICAgICBhZGRyZXNzOiBhZGRyLAogICAgICAgIHN0YXR1czogJ3ByZXNlbnQnLAogICAgICB9KTsKICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgICB9CgogICAgLy8gY2xvY2sgb3V0CiAgICBjb25zdCB7IGRhdGE6IG9wZW4gfSA9IGF3YWl0IGRiCiAgICAgIC5mcm9tKCdhdHRlbmRhbmNlJykKICAgICAgLnNlbGVjdCgnaWQnKQogICAgICAuZXEoJ2VtcGxveWVlX2lkJywgZW1wLmlkKQogICAgICAuZXEoJ2RhdGUnLCB0b2RheSkKICAgICAgLmlzKCdjbG9ja19vdXQnLCBudWxsKQogICAgICAub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSkKICAgICAgLmxpbWl0KDEpCiAgICAgIC5tYXliZVNpbmdsZSgpOwogICAgaWYgKCFvcGVuKSByZXR1cm4gZXJyKGMsICdCZWx1bSBhZGEgY2xvY2sgaW4gaGFyaSBpbmkuJyk7CiAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBkYgogICAgICAuZnJvbSgnYXR0ZW5kYW5jZScpCiAgICAgIC51cGRhdGUoeyBjbG9ja19vdXQ6IG5vd0lzbygpLCBjbG9ja19vdXRfcGhvdG86IHBob3RvID8gU3RyaW5nKHBob3RvKSA6IG51bGwgfSkKICAgICAgLmVxKCdpZCcsIG9wZW4uaWQpOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBjLmpzb24oeyBzdWNjZXNzOiB0cnVlIH0pOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignQ2xvY2sgZXJyb3I6JywgZSk7CiAgICByZXR1cm4gZXJyKGMsICdHYWdhbCBtZW1wcm9zZXMgYWJzZW5zaS4nLCA1MDApOwogIH0KfSk7CgovLyAtLS0tLS0tLS0tIGxlYXZlIHJlcXVlc3RzIC0tLS0tLS0tLS0KCmFwcC5nZXQoJy9hcGkvbGVhdmUtcmVxdWVzdHMnLCBhc3luYyAoYykgPT4gewogIHRyeSB7CiAgICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYigpCiAgICAgIC5mcm9tKCdsZWF2ZV9yZXF1ZXN0cycpCiAgICAgIC5zZWxlY3QoCiAgICAgICAgJ2lkLCBsZWF2ZV90eXBlLCByZWFzb24sIHN0YXJ0X2RhdGUsIGVuZF9kYXRlLCBzdGF0dXMsIGNyZWF0ZWRfYXQsIGVtcGxveWVlcyFpbm5lciAodXNlcl9pZCwgbmFtZSknCiAgICAgICkKICAgICAgLm9yZGVyKCdjcmVhdGVkX2F0JywgeyBhc2NlbmRpbmc6IGZhbHNlIH0pOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIC8vIGVtcGxveWVlX2lkIGRpa2VtYmFsaWthbiBzZWJhZ2FpIFNUUklORyB1c2VyX2lkIGFnYXIgZmlsdGVyCiAgICAvLyBmcm9udGVuZCAocmVxLmVtcGxveWVlX2lkID09PSB1c2VySWQpIHRldGFwIGNvY29rLgogICAgcmV0dXJuIGMuanNvbigKICAgICAgKGRhdGEgPz8gW10pLm1hcCgocjogYW55KSA9PiAoewogICAgICAgIC4uLnIsCiAgICAgICAgZW1wbG95ZWVfaWQ6IHIuZW1wbG95ZWVzPy51c2VyX2lkLAogICAgICAgIGVtcGxveWVlX25hbWU6IHIuZW1wbG95ZWVzPy5uYW1lLAogICAgICB9KSkKICAgICk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdMZWF2ZSBsaXN0IGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVtdWF0IHBlcm1vaG9uYW4gaXppbi4nLCA1MDApOwogIH0KfSk7CgphcHAucG9zdCgnL2FwaS9sZWF2ZS1yZXF1ZXN0cycsIGFzeW5jIChjKSA9PiB7CiAgbGV0IGJvZHk6IGFueTsKICB0cnkgewogICAgYm9keSA9IGF3YWl0IGMucmVxLmpzb24oKTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBlcnIoYywgJ1Blcm1pbnRhYW4gdGlkYWsgdmFsaWQuJyk7CiAgfQogIGNvbnN0IHsgdXNlcklkLCBsZWF2ZV90eXBlLCByZWFzb24sIHN0YXJ0X2RhdGUsIGVuZF9kYXRlIH0gPSBib2R5ID8/IHt9OwogIGlmICghdXNlcklkIHx8ICFsZWF2ZV90eXBlIHx8ICFzdGFydF9kYXRlIHx8ICFlbmRfZGF0ZSkgewogICAgcmV0dXJuIGVycihjLCAnRGF0YSBwZXJtb2hvbmFuIGJlbHVtIGxlbmdrYXAuJyk7CiAgfQogIHRyeSB7CiAgICBjb25zdCBkYiA9IHNiKCk7CiAgICBjb25zdCB7IGRhdGE6IGVtcCB9ID0gYXdhaXQgZGIKICAgICAgLmZyb20oJ2VtcGxveWVlcycpCiAgICAgIC5zZWxlY3QoJ2lkJykKICAgICAgLmVxKCd1c2VyX2lkJywgU3RyaW5nKHVzZXJJZCkpCiAgICAgIC5tYXliZVNpbmdsZSgpOwogICAgaWYgKCFlbXApIHJldHVybiBlcnIoYywgJ0thcnlhd2FuIHRpZGFrIGRpdGVtdWthbi4nLCA0MDQpOwogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgZGIuZnJvbSgnbGVhdmVfcmVxdWVzdHMnKS5pbnNlcnQoewogICAgICBlbXBsb3llZV9pZDogZW1wLmlkLAogICAgICBsZWF2ZV90eXBlOiBTdHJpbmcobGVhdmVfdHlwZSksCiAgICAgIHJlYXNvbjogcmVhc29uID8gU3RyaW5nKHJlYXNvbikgOiBudWxsLAogICAgICBzdGFydF9kYXRlOiBTdHJpbmcoc3RhcnRfZGF0ZSksCiAgICAgIGVuZF9kYXRlOiBTdHJpbmcoZW5kX2RhdGUpLAogICAgICBzdGF0dXM6ICdwZW5kaW5nJywKICAgIH0pOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBjLmpzb24oeyBzdWNjZXNzOiB0cnVlIH0pOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignTGVhdmUgY3JlYXRlIGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVuZ2FqdWthbiBpemluLicsIDUwMCk7CiAgfQp9KTsKCmFwcC5wb3N0KCcvYXBpL2xlYXZlLXJlcXVlc3RzLzppZC9hcHByb3ZlJywgYXN5bmMgKGMpID0+IHsKICB0cnkgewogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc2IoKQogICAgICAuZnJvbSgnbGVhdmVfcmVxdWVzdHMnKQogICAgICAudXBkYXRlKHsgc3RhdHVzOiAnYXBwcm92ZWQnIH0pCiAgICAgIC5lcSgnaWQnLCBjLnJlcS5wYXJhbSgnaWQnKSk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcmV0dXJuIGMuanNvbih7IHN1Y2Nlc3M6IHRydWUgfSk7CiAgfSBjYXRjaCAoZTogYW55KSB7CiAgICBjb25zb2xlLmVycm9yKCdMZWF2ZSBhcHByb3ZlIGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVueWV0dWp1aSBpemluLicsIDUwMCk7CiAgfQp9KTsKCmFwcC5wb3N0KCcvYXBpL2xlYXZlLXJlcXVlc3RzLzppZC9yZWplY3QnLCBhc3luYyAoYykgPT4gewogIHRyeSB7CiAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzYigpCiAgICAgIC5mcm9tKCdsZWF2ZV9yZXF1ZXN0cycpCiAgICAgIC51cGRhdGUoeyBzdGF0dXM6ICdyZWplY3RlZCcgfSkKICAgICAgLmVxKCdpZCcsIGMucmVxLnBhcmFtKCdpZCcpKTsKICAgIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgICByZXR1cm4gYy5qc29uKHsgc3VjY2VzczogdHJ1ZSB9KTsKICB9IGNhdGNoIChlOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0xlYXZlIHJlamVjdCBlcnJvcjonLCBlKTsKICAgIHJldHVybiBlcnIoYywgJ0dhZ2FsIG1lbm9sYWsgaXppbi4nLCA1MDApOwogIH0KfSk7CgovLyAtLS0tLS0tLS0tIGJhY2t1cCAtLS0tLS0tLS0tCgphcHAuZ2V0KCcvYXBpL2JhY2t1cCcsIGFzeW5jIChjKSA9PiB7CiAgdHJ5IHsKICAgIGNvbnN0IGRiID0gc2IoKTsKICAgIGNvbnN0IFtlbXBsb3llZXMsIGFkbWlucywgYXR0ZW5kYW5jZSwgbGVhdmVSZXF1ZXN0c10gPSBhd2FpdCBQcm9taXNlLmFsbChbCiAgICAgIGRiLmZyb20oJ2VtcGxveWVlcycpLnNlbGVjdCgnaWQsIHVzZXJfaWQsIG5hbWUsIGVtYWlsLCBwaG9uZSwgcG9zaXRpb24sIGRlcGFydG1lbnQsIGlzX2FjdGl2ZSwgY3JlYXRlZF9hdCcpLAogICAgICBkYi5mcm9tKCdhZG1pbnMnKS5zZWxlY3QoJ2lkLCB1c2VyX2lkLCBuYW1lLCBlbWFpbCwgaXNfYWN0aXZlLCBjcmVhdGVkX2F0JyksCiAgICAgIGRiLmZyb20oJ2F0dGVuZGFuY2UnKS5zZWxlY3QoJyonKSwKICAgICAgZGIuZnJvbSgnbGVhdmVfcmVxdWVzdHMnKS5zZWxlY3QoJyonKSwKICAgIF0pOwogICAgaWYgKGVtcGxveWVlcy5lcnJvcikgdGhyb3cgZW1wbG95ZWVzLmVycm9yOwogICAgcmV0dXJuIGMuanNvbih7CiAgICAgIHRpbWVzdGFtcDogbm93SXNvKCksCiAgICAgIGVtcGxveWVlczogZW1wbG95ZWVzLmRhdGEgPz8gW10sCiAgICAgIGFkbWluczogYWRtaW5zLmRhdGEgPz8gW10sCiAgICAgIGF0dGVuZGFuY2U6IGF0dGVuZGFuY2UuZGF0YSA/PyBbXSwKICAgICAgbGVhdmVfcmVxdWVzdHM6IGxlYXZlUmVxdWVzdHMuZGF0YSA/PyBbXSwKICAgIH0pOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignQmFja3VwIGVycm9yOicsIGUpOwogICAgcmV0dXJuIGVycihjLCAnR2FnYWwgbWVtYnVhdCBiYWNrdXAuJywgNTAwKTsKICB9Cn0pOwoKLy8gLS0tLS0tLS0tLSA0MDQgJiBlcnJvciAtLS0tLS0tLS0tCgphcHAubm90Rm91bmQoKGMpID0+IGMuanNvbih7IGVycm9yOiAnTm90IEZvdW5kJyB9LCA0MDQpKTsKYXBwLm9uRXJyb3IoKGUsIGMpID0+IHsKICBjb25zb2xlLmVycm9yKGUpOwogIHJldHVybiBjLmpzb24oeyBlcnJvcjogJ1RlcmphZGkga2VzYWxhaGFuIHNlcnZlci4nIH0sIDUwMCk7Cn0pOwoKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci8vIE5ldGxpZnkgRnVuY3Rpb24gaGFuZGxlciAodjEsIGV2ZW50LWJhc2VkKS4KLy8gLSBOb3JtYWxpc2FzaSBldmVudC5wYXRoOiBOZXRsaWZ5IGJpc2EgbWVuZ2lyaW0gcGF0aCBoYXNpbCByZXdyaXRlCi8vICAgKC8ubmV0bGlmeS9mdW5jdGlvbnMvYXBpLy4uLikg4oCUIHViYWgga2UgL2FwaS8uLi4gYWdhciByb3V0ZQovLyAgIEhvbm8gc2VsYWx1IGNvY29rLCBhcGEgcHVuIGJlbnR1ayByZWRpcmVjdC1ueWEuCi8vIC0gS29udmVyc2kgZXZlbnQgLT4gUmVxdWVzdCBkYW4gUmVzcG9uc2UgLT4gZm9ybWF0IE5ldGxpZnkuCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZnVuY3Rpb24gbm9ybWFsaXplUGF0aChwOiBzdHJpbmcpOiBzdHJpbmcgewogIGNvbnN0IG0gPSBwLm1hdGNoKC9eXC9cLm5ldGxpZnlcL2Z1bmN0aW9uc1wvW14vXSsoXC8uKik/JC8pOwogIGlmIChtKSBwID0gbVsxXSB8fCAnLyc7CiAgaWYgKCFwLnN0YXJ0c1dpdGgoJy9hcGknKSkgcCA9IHAgPT09ICcvJyA/ICcvYXBpJyA6ICcvYXBpJyArIHA7CiAgcmV0dXJuIHA7Cn0KCmZ1bmN0aW9uIGV2ZW50VG9SZXF1ZXN0KGV2ZW50OiBhbnkpOiBSZXF1ZXN0IHsKICBjb25zdCBoZWFkZXJzID0gZXZlbnQuaGVhZGVycyB8fCB7fTsKICBjb25zdCBob3N0ID0gaGVhZGVycy5ob3N0IHx8IGhlYWRlcnMuSG9zdCB8fCAnbG9jYWxob3N0JzsKICBjb25zdCBwcm90byA9IGhlYWRlcnNbJ3gtZm9yd2FyZGVkLXByb3RvJ10gfHwgJ2h0dHBzJzsKICBjb25zdCBwYXRoID0gbm9ybWFsaXplUGF0aChldmVudC5wYXRoIHx8ICcvJyk7CiAgbGV0IHVybCA9IGAke3Byb3RvfTovLyR7aG9zdH0ke3BhdGh9YDsKICBjb25zdCBxc3AgPSBldmVudC5xdWVyeVN0cmluZ1BhcmFtZXRlcnM7CiAgaWYgKHFzcCAmJiBPYmplY3Qua2V5cyhxc3ApLmxlbmd0aCA+IDApIHsKICAgIHVybCArPSAnPycgKyBuZXcgVVJMU2VhcmNoUGFyYW1zKHFzcCkudG9TdHJpbmcoKTsKICB9CiAgY29uc3QgcmVxSGVhZGVycyA9IG5ldyBIZWFkZXJzKCk7CiAgZm9yIChjb25zdCBbaywgdl0gb2YgT2JqZWN0LmVudHJpZXMoaGVhZGVycykpIHsKICAgIGlmICh0eXBlb2YgdiA9PT0gJ3N0cmluZycpIHJlcUhlYWRlcnMuc2V0KGssIHYpOwogIH0KICBjb25zdCBtZXRob2QgPSAoZXZlbnQuaHR0cE1ldGhvZCB8fCAnR0VUJykudG9VcHBlckNhc2UoKTsKICBsZXQgYm9keTogQm9keUluaXQgfCB1bmRlZmluZWQ7CiAgaWYgKGV2ZW50LmJvZHkgJiYgbWV0aG9kICE9PSAnR0VUJyAmJiBtZXRob2QgIT09ICdIRUFEJykgewogICAgYm9keSA9IGV2ZW50LmlzQmFzZTY0RW5jb2RlZCA/IEJ1ZmZlci5mcm9tKGV2ZW50LmJvZHksICdiYXNlNjQnKSA6IGV2ZW50LmJvZHk7CiAgfQogIHJldHVybiBuZXcgUmVxdWVzdCh1cmwsIHsgbWV0aG9kLCBoZWFkZXJzOiByZXFIZWFkZXJzLCBib2R5IH0pOwp9Cgphc3luYyBmdW5jdGlvbiB0b05ldGxpZnlSZXN1bHQocmVzOiBSZXNwb25zZSkgewogIGNvbnN0IGhlYWRlcnM6IFJlY29yZDxzdHJpbmcsIHN0cmluZz4gPSB7fTsKICByZXMuaGVhZGVycy5mb3JFYWNoKCh2LCBrKSA9PiB7CiAgICBoZWFkZXJzW2tdID0gdjsKICB9KTsKICBjb25zdCBidWYgPSBCdWZmZXIuZnJvbShhd2FpdCByZXMuYXJyYXlCdWZmZXIoKSk7CiAgcmV0dXJuIHsKICAgIHN0YXR1c0NvZGU6IHJlcy5zdGF0dXMsCiAgICBoZWFkZXJzLAogICAgYm9keTogYnVmLnRvU3RyaW5nKCdiYXNlNjQnKSwKICAgIGlzQmFzZTY0RW5jb2RlZDogdHJ1ZSwKICB9Owp9CgpleHBvcnQgY29uc3QgaGFuZGxlciA9IGFzeW5jIChldmVudDogYW55LCBfY29udGV4dDogYW55KSA9PiB7CiAgdHJ5IHsKICAgIGNvbnN0IHJlcSA9IGV2ZW50VG9SZXF1ZXN0KGV2ZW50KTsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGFwcC5mZXRjaChyZXEpOwogICAgcmV0dXJuIGF3YWl0IHRvTmV0bGlmeVJlc3VsdChyZXMpOwogIH0gY2F0Y2ggKGU6IGFueSkgewogICAgY29uc29sZS5lcnJvcignSGFuZGxlciBlcnJvcjonLCBlKTsKICAgIHJldHVybiB7CiAgICAgIHN0YXR1c0NvZGU6IDUwMCwKICAgICAgaGVhZGVyczogeyAnY29udGVudC10eXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgZXJyb3I6ICdUZXJqYWRpIGtlc2FsYWhhbiBzZXJ2ZXIuJyB9KSwKICAgICAgaXNCYXNlNjRFbmNvZGVkOiBmYWxzZSwKICAgIH07CiAgfQp9Owo=
+import { Hono } from 'hono';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import bcrypt from 'bcryptjs';
+
+// ============================================================
+// PT Malaka Express Line — Backend API (Netlify Functions)
+// Database: Supabase (Postgres). Env vars (di Netlify dashboard):
+//   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+// ============================================================
+
+const app = new Hono();
+
+// ---------- helpers ----------
+
+let _sb: SupabaseClient | null = null;
+function sb(): SupabaseClient {
+  if (_sb) return _sb;
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) {
+    throw new Error(
+      'Konfigurasi server belum lengkap (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY).'
+    );
+  }
+  _sb = createClient(url, key, { auth: { persistSession: false } });
+  return _sb;
+}
+
+/** Tanggal "hari ini" dalam WIB, format YYYY-MM-DD */
+function wibToday(): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Jakarta',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date());
+}
+
+/** Waktu sekarang (ISO UTC) untuk kolom timestamptz */
+function nowIso(): string {
+  return new Date().toISOString();
+}
+
+/** Reverse-geocode di server (dipindah dari browser). */
+async function reverseGeocode(lat: number, lon: number): Promise<string | null> {
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 8000);
+    const res = await fetch(
+      `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=18&addressdetails=1`,
+      { headers: { 'User-Agent': 'Malaka-Attendance-App/1.0' }, signal: ctrl.signal }
+    );
+    clearTimeout(t);
+    if (!res.ok) return null;
+    const data = (await res.json()) as { display_name?: string };
+    return data.display_name ?? null;
+  } catch {
+    return null;
+  }
+}
+
+function err(c: any, message: string, status = 400) {
+  return c.json({ error: message }, status);
+}
+
+// ---------- health ----------
+
+app.get('/api/health', (c) => {
+  return c.json({ status: 'ok', timestamp: nowIso() });
+});
+
+// ---------- auth ----------
+
+async function loginHandler(c: any) {
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { userType, userId, password } = body ?? {};
+  if (userType !== 'admin' && userType !== 'karyawan') {
+    return err(c, 'Tipe pengguna tidak valid.');
+  }
+  if (!userId || !password) {
+    return err(c, 'ID dan password wajib diisi.');
+  }
+
+  try {
+    const table = userType === 'admin' ? 'admins' : 'employees';
+    const { data, error } = await sb()
+      .from(table)
+      .select('id, user_id, name, email, password_hash, is_active')
+      .eq('user_id', String(userId))
+      .eq('is_active', true)
+      .maybeSingle();
+
+    if (error) throw error;
+    if (!data) {
+      return err(
+        c,
+        userType === 'admin' ? 'ID Admin atau password salah' : 'ID Karyawan atau password salah',
+        401
+      );
+    }
+    const ok = await bcrypt.compare(String(password), data.password_hash);
+    if (!ok) {
+      return err(
+        c,
+        userType === 'admin' ? 'ID Admin atau password salah' : 'ID Karyawan atau password salah',
+        401
+      );
+    }
+    const { password_hash: _ph, ...user } = data;
+    return c.json({ success: true, user });
+  } catch (e: any) {
+    console.error('Login error:', e);
+    return err(c, e.message || 'Terjadi kesalahan server.', 500);
+  }
+}
+
+// Kontrak frontend: POST /api/login
+app.post('/api/login', loginHandler);
+// Alias sesuai spesifikasi
+app.post('/api/auth/login', loginHandler);
+
+// ---------- stats (admin dashboard) ----------
+
+app.get('/api/stats', async (c) => {
+  try {
+    const today = wibToday();
+    const db = sb();
+
+    const [{ count: totalEmployees }, { data: present }, { count: pendingLeave }, { count: totalAdmins }] =
+      await Promise.all([
+        db.from('employees').select('id', { count: 'exact', head: true }).eq('is_active', true),
+        db.from('attendance').select('employee_id').eq('date', today),
+        db.from('leave_requests').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
+        db.from('admins').select('id', { count: 'exact', head: true }).eq('is_active', true),
+      ]);
+
+    const presentToday = new Set((present ?? []).map((r: any) => r.employee_id)).size;
+
+    return c.json({
+      totalEmployees: totalEmployees ?? 0,
+      presentToday,
+      pendingLeave: pendingLeave ?? 0,
+      totalAdmins: totalAdmins ?? 0,
+    });
+  } catch (e: any) {
+    console.error('Stats error:', e);
+    return err(c, 'Gagal memuat statistik.', 500);
+  }
+});
+
+// ---------- employees ----------
+
+app.get('/api/employees', async (c) => {
+  try {
+    const { data, error } = await sb()
+      .from('employees')
+      .select('id, user_id, name, email, phone, position, department, photo_url, is_active, created_at')
+      .order('created_at', { ascending: false });
+    if (error) throw error;
+    // Samakan kontrak frontend lama: employee_id = user_id (string)
+    return c.json(
+      (data ?? []).map((e: any) => ({ ...e, employee_id: e.user_id }))
+    );
+  } catch (e: any) {
+    console.error('Employees list error:', e);
+    return err(c, 'Gagal memuat data karyawan.', 500);
+  }
+});
+
+app.post('/api/employees', async (c) => {
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { employee_id, user_id, name, email, phone, position, department, password } = body ?? {};
+  const uid = String(employee_id ?? user_id ?? '').trim();
+  if (!uid || !name || !password) {
+    return err(c, 'ID, nama, dan password wajib diisi.');
+  }
+  try {
+    const db = sb();
+    const { data: existing } = await db
+      .from('employees')
+      .select('id')
+      .eq('user_id', uid)
+      .maybeSingle();
+    if (existing) return err(c, 'ID karyawan sudah digunakan.');
+
+    const password_hash = await bcrypt.hash(String(password), 10);
+    const { error } = await db.from('employees').insert({
+      user_id: uid,
+      name: String(name).trim(),
+      email: email ? String(email).trim() : null,
+      phone: phone ? String(phone).trim() : null,
+      position: position ? String(position).trim() : null,
+      department: department ? String(department).trim() : null,
+      password_hash,
+    });
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Employee create error:', e);
+    return err(c, 'Gagal menambah karyawan.', 500);
+  }
+});
+
+app.put('/api/employees/:id', async (c) => {
+  const id = c.req.param('id');
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { name, email, phone, position, department, password } = body ?? {};
+  if (!name) return err(c, 'Nama wajib diisi.');
+  try {
+    const db = sb();
+    const patch: any = {
+      name: String(name).trim(),
+      email: email ? String(email).trim() : null,
+      phone: phone ? String(phone).trim() : null,
+      position: position ? String(position).trim() : null,
+      department: department ? String(department).trim() : null,
+    };
+    if (password) patch.password_hash = await bcrypt.hash(String(password), 10);
+    const { error } = await db.from('employees').update(patch).eq('id', id);
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Employee update error:', e);
+    return err(c, 'Gagal memperbarui karyawan.', 500);
+  }
+});
+
+// Daftarkan route spesifik SEBELUM :id agar tidak tertelan param
+app.delete('/api/employees/delete-all', async (c) => {
+  try {
+    const db = sb();
+    await db.from('attendance').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+    await db.from('leave_requests').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+    await db.from('notifications').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+    const { error } = await db.from('employees').delete().neq('id', '00000000-0000-0000-0000-000000000000');
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Employees delete-all error:', e);
+    return err(c, 'Gagal menghapus semua karyawan.', 500);
+  }
+});
+
+app.delete('/api/employees/:id', async (c) => {
+  const id = c.req.param('id');
+  try {
+    const { error } = await sb().from('employees').delete().eq('id', id);
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Employee delete error:', e);
+    return err(c, 'Gagal menghapus karyawan.', 500);
+  }
+});
+
+// ---------- admins ----------
+
+app.get('/api/admins', async (c) => {
+  try {
+    const { data, error } = await sb()
+      .from('admins')
+      .select('id, user_id, name, email, is_active, created_at')
+      .order('created_at', { ascending: false });
+    if (error) throw error;
+    return c.json((data ?? []).map((a: any) => ({ ...a, admin_id: a.user_id })));
+  } catch (e: any) {
+    console.error('Admins list error:', e);
+    return err(c, 'Gagal memuat data admin.', 500);
+  }
+});
+
+app.post('/api/admins', async (c) => {
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { admin_id, user_id, name, email, password } = body ?? {};
+  const uid = String(admin_id ?? user_id ?? '').trim();
+  if (!uid || !name || !password) {
+    return err(c, 'ID, nama, dan password wajib diisi.');
+  }
+  try {
+    const db = sb();
+    const { data: existing } = await db.from('admins').select('id').eq('user_id', uid).maybeSingle();
+    if (existing) return err(c, 'ID admin sudah digunakan.');
+    const password_hash = await bcrypt.hash(String(password), 10);
+    const { error } = await db.from('admins').insert({
+      user_id: uid,
+      name: String(name).trim(),
+      email: email ? String(email).trim() : null,
+      password_hash,
+    });
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Admin create error:', e);
+    return err(c, 'Gagal menambah admin.', 500);
+  }
+});
+
+app.put('/api/admins/:id', async (c) => {
+  const id = c.req.param('id');
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { name, email, password } = body ?? {};
+  if (!name) return err(c, 'Nama wajib diisi.');
+  try {
+    const db = sb();
+    const patch: any = {
+      name: String(name).trim(),
+      email: email ? String(email).trim() : null,
+    };
+    if (password) patch.password_hash = await bcrypt.hash(String(password), 10);
+    const { error } = await db.from('admins').update(patch).eq('id', id);
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Admin update error:', e);
+    return err(c, 'Gagal memperbarui admin.', 500);
+  }
+});
+
+app.delete('/api/admins/delete-all', async (c) => {
+  try {
+    const { error } = await sb()
+      .from('admins')
+      .delete()
+      .neq('id', '00000000-0000-0000-0000-000000000000');
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Admins delete-all error:', e);
+    return err(c, 'Gagal menghapus semua admin.', 500);
+  }
+});
+
+app.delete('/api/admins/:id', async (c) => {
+  const id = c.req.param('id');
+  try {
+    const { error } = await sb().from('admins').delete().eq('id', id);
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Admin delete error:', e);
+    return err(c, 'Gagal menghapus admin.', 500);
+  }
+});
+
+// ---------- attendance ----------
+
+app.get('/api/attendance', async (c) => {
+  try {
+    const date = c.req.query('date');
+    let q = sb()
+      .from('attendance')
+      .select(
+        'id, employee_id, date, clock_in, clock_out, clock_in_photo, clock_out_photo, latitude, longitude, address, status, notes, created_at, employees!inner (user_id, name)'
+      )
+      .order('created_at', { ascending: false })
+      .limit(100);
+    if (date) q = q.eq('date', date);
+    const { data, error } = await q;
+    if (error) throw error;
+    return c.json(
+      (data ?? []).map((r: any) => ({
+        ...r,
+        employee_id: r.employees?.user_id,
+        employee_name: r.employees?.name,
+      }))
+    );
+  } catch (e: any) {
+    console.error('Attendance list error:', e);
+    return err(c, 'Gagal memuat data absensi.', 500);
+  }
+});
+
+app.get('/api/attendance/status', async (c) => {
+  const userId = c.req.query('userId');
+  if (!userId) return err(c, 'User ID wajib diisi.');
+  try {
+    const db = sb();
+    const { data: emp } = await db
+      .from('employees')
+      .select('id')
+      .eq('user_id', String(userId))
+      .maybeSingle();
+    if (!emp) return err(c, 'Karyawan tidak ditemukan.', 404);
+
+    const { data: att } = await db
+      .from('attendance')
+      .select('*')
+      .eq('employee_id', emp.id)
+      .eq('date', wibToday())
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+
+    const isClockedIn = !!(att && att.clock_in && !att.clock_out);
+    return c.json({ isClockedIn, attendance: att ?? null });
+  } catch (e: any) {
+    console.error('Attendance status error:', e);
+    return err(c, 'Gagal memeriksa status absensi.', 500);
+  }
+});
+
+app.post('/api/attendance/clock', async (c) => {
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { userId, action, photo, latitude, longitude, address } = body ?? {};
+  if (!userId || (action !== 'in' && action !== 'out')) {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  try {
+    const db = sb();
+    const { data: emp } = await db
+      .from('employees')
+      .select('id, is_active')
+      .eq('user_id', String(userId))
+      .maybeSingle();
+    if (!emp || !emp.is_active) return err(c, 'Karyawan tidak ditemukan.', 404);
+
+    const today = wibToday();
+
+    if (action === 'in') {
+      const { data: open } = await db
+        .from('attendance')
+        .select('id')
+        .eq('employee_id', emp.id)
+        .eq('date', today)
+        .is('clock_out', null)
+        .limit(1)
+        .maybeSingle();
+      if (open) return err(c, 'Anda sudah clock in hari ini.');
+
+      let addr: string | null = address ? String(address) : null;
+      const lat = typeof latitude === 'number' ? latitude : null;
+      const lon = typeof longitude === 'number' ? longitude : null;
+      if (!addr && lat !== null && lon !== null) {
+        addr = await reverseGeocode(lat, lon);
+      }
+
+      const { error } = await db.from('attendance').insert({
+        employee_id: emp.id,
+        date: today,
+        clock_in: nowIso(),
+        clock_in_photo: photo ? String(photo) : null,
+        latitude: lat,
+        longitude: lon,
+        address: addr,
+        status: 'present',
+      });
+      if (error) throw error;
+      return c.json({ success: true });
+    }
+
+    // clock out
+    const { data: open } = await db
+      .from('attendance')
+      .select('id')
+      .eq('employee_id', emp.id)
+      .eq('date', today)
+      .is('clock_out', null)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+    if (!open) return err(c, 'Belum ada clock in hari ini.');
+    const { error } = await db
+      .from('attendance')
+      .update({ clock_out: nowIso(), clock_out_photo: photo ? String(photo) : null })
+      .eq('id', open.id);
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Clock error:', e);
+    return err(c, 'Gagal memproses absensi.', 500);
+  }
+});
+
+// ---------- leave requests ----------
+
+app.get('/api/leave-requests', async (c) => {
+  try {
+    const { data, error } = await sb()
+      .from('leave_requests')
+      .select(
+        'id, leave_type, reason, start_date, end_date, status, created_at, employees!inner (user_id, name)'
+      )
+      .order('created_at', { ascending: false });
+    if (error) throw error;
+    // employee_id dikembalikan sebagai STRING user_id agar filter
+    // frontend (req.employee_id === userId) tetap cocok.
+    return c.json(
+      (data ?? []).map((r: any) => ({
+        ...r,
+        employee_id: r.employees?.user_id,
+        employee_name: r.employees?.name,
+      }))
+    );
+  } catch (e: any) {
+    console.error('Leave list error:', e);
+    return err(c, 'Gagal memuat permohonan izin.', 500);
+  }
+});
+
+app.post('/api/leave-requests', async (c) => {
+  let body: any;
+  try {
+    body = await c.req.json();
+  } catch {
+    return err(c, 'Permintaan tidak valid.');
+  }
+  const { userId, leave_type, reason, start_date, end_date } = body ?? {};
+  if (!userId || !leave_type || !start_date || !end_date) {
+    return err(c, 'Data permohonan belum lengkap.');
+  }
+  try {
+    const db = sb();
+    const { data: emp } = await db
+      .from('employees')
+      .select('id')
+      .eq('user_id', String(userId))
+      .maybeSingle();
+    if (!emp) return err(c, 'Karyawan tidak ditemukan.', 404);
+    const { error } = await db.from('leave_requests').insert({
+      employee_id: emp.id,
+      leave_type: String(leave_type),
+      reason: reason ? String(reason) : null,
+      start_date: String(start_date),
+      end_date: String(end_date),
+      status: 'pending',
+    });
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Leave create error:', e);
+    return err(c, 'Gagal mengajukan izin.', 500);
+  }
+});
+
+app.post('/api/leave-requests/:id/approve', async (c) => {
+  try {
+    const { error } = await sb()
+      .from('leave_requests')
+      .update({ status: 'approved' })
+      .eq('id', c.req.param('id'));
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Leave approve error:', e);
+    return err(c, 'Gagal menyetujui izin.', 500);
+  }
+});
+
+app.post('/api/leave-requests/:id/reject', async (c) => {
+  try {
+    const { error } = await sb()
+      .from('leave_requests')
+      .update({ status: 'rejected' })
+      .eq('id', c.req.param('id'));
+    if (error) throw error;
+    return c.json({ success: true });
+  } catch (e: any) {
+    console.error('Leave reject error:', e);
+    return err(c, 'Gagal menolak izin.', 500);
+  }
+});
+
+// ---------- backup ----------
+
+app.get('/api/backup', async (c) => {
+  try {
+    const db = sb();
+    const [employees, admins, attendance, leaveRequests] = await Promise.all([
+      db.from('employees').select('id, user_id, name, email, phone, position, department, is_active, created_at'),
+      db.from('admins').select('id, user_id, name, email, is_active, created_at'),
+      db.from('attendance').select('*'),
+      db.from('leave_requests').select('*'),
+    ]);
+    if (employees.error) throw employees.error;
+    return c.json({
+      timestamp: nowIso(),
+      employees: employees.data ?? [],
+      admins: admins.data ?? [],
+      attendance: attendance.data ?? [],
+      leave_requests: leaveRequests.data ?? [],
+    });
+  } catch (e: any) {
+    console.error('Backup error:', e);
+    return err(c, 'Gagal membuat backup.', 500);
+  }
+});
+
+// ---------- 404 & error ----------
+
+app.notFound((c) => c.json({ error: 'Not Found' }, 404));
+app.onError((e, c) => {
+  console.error(e);
+  return c.json({ error: 'Terjadi kesalahan server.' }, 500);
+});
+
+// ============================================================
+// Netlify Function handler (v1, event-based).
+// - Normalisasi event.path: Netlify bisa mengirim path hasil rewrite
+//   (/.netlify/functions/api/...) — ubah ke /api/... agar route
+//   Hono selalu cocok, apa pun bentuk redirect-nya.
+// - Konversi event -> Request dan Response -> format Netlify.
+// ============================================================
+
+function normalizePath(p: string): string {
+  const m = p.match(/^\/\.netlify\/functions\/[^/]+(\/.*)?$/);
+  if (m) p = m[1] || '/';
+  if (!p.startsWith('/api')) p = p === '/' ? '/api' : '/api' + p;
+  return p;
+}
+
+function eventToRequest(event: any): Request {
+  const headers = event.headers || {};
+  const host = headers.host || headers.Host || 'localhost';
+  const proto = headers['x-forwarded-proto'] || 'https';
+  const path = normalizePath(event.path || '/');
+  let url = `${proto}://${host}${path}`;
+  const qsp = event.queryStringParameters;
+  if (qsp && Object.keys(qsp).length > 0) {
+    url += '?' + new URLSearchParams(qsp).toString();
+  }
+  const reqHeaders = new Headers();
+  for (const [k, v] of Object.entries(headers)) {
+    if (typeof v === 'string') reqHeaders.set(k, v);
+  }
+  const method = (event.httpMethod || 'GET').toUpperCase();
+  let body: BodyInit | undefined;
+  if (event.body && method !== 'GET' && method !== 'HEAD') {
+    body = event.isBase64Encoded ? Buffer.from(event.body, 'base64') : event.body;
+  }
+  return new Request(url, { method, headers: reqHeaders, body });
+}
+
+async function toNetlifyResult(res: Response) {
+  const headers: Record<string, string> = {};
+  res.headers.forEach((v, k) => {
+    headers[k] = v;
+  });
+  const buf = Buffer.from(await res.arrayBuffer());
+  return {
+    statusCode: res.status,
+    headers,
+    body: buf.toString('base64'),
+    isBase64Encoded: true,
+  };
+}
+
+export const handler = async (event: any, _context: any) => {
+  try {
+    const req = eventToRequest(event);
+    const res = await app.fetch(req);
+    return await toNetlifyResult(res);
+  } catch (e: any) {
+    console.error('Handler error:', e);
+    return {
+      statusCode: 500,
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ error: 'Terjadi kesalahan server.' }),
+      isBase64Encoded: false,
+    };
+  }
+};
