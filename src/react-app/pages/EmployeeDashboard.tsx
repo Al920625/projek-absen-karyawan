@@ -1,1 +1,545 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlUmVmIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyB1c2VOYXZpZ2F0ZSB9IGZyb20gJ3JlYWN0LXJvdXRlcic7CmltcG9ydCB7IAogIExvZ091dCwKICBDYW1lcmEsCiAgVXNlciwKICBNb29uLAogIFN1biwKICBHbG9iZSwKICBYLAogIEZpbGVUZXh0Cn0gZnJvbSAnbHVjaWRlLXJlYWN0JzsKaW1wb3J0IHsgdXNlQXBwIH0gZnJvbSAnQC9yZWFjdC1hcHAvY29udGV4dHMvQXBwQ29udGV4dCc7Cgpjb25zdCBsZWF2ZVR5cGVzID0gWwogICdDdXRpIFRhaHVuYW4nLAogICdTYWtpdCcsCiAgJ0l6aW4gTWVuaWthaCcsCiAgJ0l6aW4gTWVsYWhpcmthbicsCiAgJ0l6aW4gS2VsdWFyZ2EnLAogICdMYWlubnlhJywKXTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEVtcGxveWVlRGFzaGJvYXJkKCkgewogIGNvbnN0IG5hdmlnYXRlID0gdXNlTmF2aWdhdGUoKTsKICBjb25zdCB7IGlzRGFya01vZGUsIHRvZ2dsZURhcmtNb2RlLCBsYW5ndWFnZSwgc2V0TGFuZ3VhZ2UsIHNob3dOb3RpZmljYXRpb24gfSA9IHVzZUFwcCgpOwogIGNvbnN0IFthY3RpdmVNZW51LCBzZXRBY3RpdmVNZW51XSA9IHVzZVN0YXRlKCdkYXNoYm9hcmQnKTsKICBjb25zdCBbaXNDbG9ja2VkSW4sIHNldElzQ2xvY2tlZEluXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc2hvd0NhbWVyYSwgc2V0U2hvd0NhbWVyYV0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3Nob3dMZWF2ZU1vZGFsLCBzZXRTaG93TGVhdmVNb2RhbF0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2Nsb2NrQWN0aW9uLCBzZXRDbG9ja0FjdGlvbl0gPSB1c2VTdGF0ZTwnaW4nIHwgJ291dCc+KCdpbicpOwogIGNvbnN0IFtsZWF2ZVJlcXVlc3RzLCBzZXRMZWF2ZVJlcXVlc3RzXSA9IHVzZVN0YXRlPGFueVtdPihbXSk7CiAgY29uc3QgdmlkZW9SZWYgPSB1c2VSZWY8SFRNTFZpZGVvRWxlbWVudD4obnVsbCk7CiAgY29uc3QgY2FudmFzUmVmID0gdXNlUmVmPEhUTUxDYW52YXNFbGVtZW50PihudWxsKTsKICBjb25zdCBbc3RyZWFtLCBzZXRTdHJlYW1dID0gdXNlU3RhdGU8TWVkaWFTdHJlYW0gfCBudWxsPihudWxsKTsKICBjb25zdCBbbGVhdmVGb3JtRGF0YSwgc2V0TGVhdmVGb3JtRGF0YV0gPSB1c2VTdGF0ZSh7CiAgICBsZWF2ZV90eXBlOiAnQ3V0aSBUYWh1bmFuJywKICAgIHJlYXNvbjogJycsCiAgICBzdGFydF9kYXRlOiAnJywKICAgIGVuZF9kYXRlOiAnJywKICB9KTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IHVzZXJUeXBlID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3VzZXJUeXBlJyk7CiAgICBpZiAodXNlclR5cGUgIT09ICdrYXJ5YXdhbicpIHsKICAgICAgbmF2aWdhdGUoJy8nKTsKICAgIH0KICAgIGNoZWNrQ2xvY2tTdGF0dXMoKTsKICAgIGxvYWRMZWF2ZVJlcXVlc3RzKCk7CiAgICBjaGVja0xvY2F0aW9uUGVybWlzc2lvbigpOwogIH0sIFtuYXZpZ2F0ZV0pOwoKICBjb25zdCBjaGVja0xvY2F0aW9uUGVybWlzc2lvbiA9IGFzeW5jICgpID0+IHsKICAgIGlmICghbmF2aWdhdG9yLmdlb2xvY2F0aW9uKSB7CiAgICAgIHNob3dOb3RpZmljYXRpb24oJ0Jyb3dzZXIgQW5kYSB0aWRhayBtZW5kdWt1bmcgbG9rYXNpIEdQUycsICdlcnJvcicpOwogICAgICByZXR1cm47CiAgICB9CgogICAgdHJ5IHsKICAgICAgY29uc3QgcGVybWlzc2lvbiA9IGF3YWl0IG5hdmlnYXRvci5wZXJtaXNzaW9ucy5xdWVyeSh7IG5hbWU6ICdnZW9sb2NhdGlvbicgfSk7CiAgICAgIAogICAgICBpZiAocGVybWlzc2lvbi5zdGF0ZSA9PT0gJ2RlbmllZCcpIHsKICAgICAgICBzaG93Tm90aWZpY2F0aW9uKCdIYXJhcCBha3RpZmthbiBha3NlcyBsb2thc2kgZGkgcGVuZ2F0dXJhbiBicm93c2VyIHVudHVrIG1lbGFrdWthbiBhYnNlbnNpJywgJ2Vycm9yJyk7CiAgICAgIH0gZWxzZSBpZiAocGVybWlzc2lvbi5zdGF0ZSA9PT0gJ3Byb21wdCcpIHsKICAgICAgICBzaG93Tm90aWZpY2F0aW9uKCdBbmRhIGFrYW4gZGltaW50YSBtZW5nYWt0aWZrYW4gbG9rYXNpIHNhYXQgbWVsYWt1a2FuIGNsb2NrIGluJywgJ2luZm8nKTsKICAgICAgfQoKICAgICAgcGVybWlzc2lvbi5hZGRFdmVudExpc3RlbmVyKCdjaGFuZ2UnLCAoKSA9PiB7CiAgICAgICAgaWYgKHBlcm1pc3Npb24uc3RhdGUgPT09ICdkZW5pZWQnKSB7CiAgICAgICAgICBzaG93Tm90aWZpY2F0aW9uKCdBa3NlcyBsb2thc2kgZGl0b2xhay4gSGFyYXAgYWt0aWZrYW4gdW50dWsgbWVsYWt1a2FuIGNsb2NrIGluJywgJ2Vycm9yJyk7CiAgICAgICAgfSBlbHNlIGlmIChwZXJtaXNzaW9uLnN0YXRlID09PSAnZ3JhbnRlZCcpIHsKICAgICAgICAgIHNob3dOb3RpZmljYXRpb24oJ0Frc2VzIGxva2FzaSBkaWFrdGlma2FuJywgJ3N1Y2Nlc3MnKTsKICAgICAgICB9CiAgICAgIH0pOwogICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yIGNoZWNraW5nIGxvY2F0aW9uIHBlcm1pc3Npb246JywgZXJyKTsKICAgIH0KICB9OwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgcmV0dXJuICgpID0+IHsKICAgICAgaWYgKHN0cmVhbSkgewogICAgICAgIHN0cmVhbS5nZXRUcmFja3MoKS5mb3JFYWNoKCh0cmFjaykgPT4gdHJhY2suc3RvcCgpKTsKICAgICAgfQogICAgfTsKICB9LCBbc3RyZWFtXSk7CgogIGNvbnN0IGNoZWNrQ2xvY2tTdGF0dXMgPSBhc3luYyAoKSA9PiB7CiAgICB0cnkgewogICAgICBjb25zdCB1c2VySWQgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndXNlcklkJyk7CiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goYC9hcGkvYXR0ZW5kYW5jZS9zdGF0dXM/dXNlcklkPSR7dXNlcklkfWApOwogICAgICBpZiAocmVzcG9uc2Uub2spIHsKICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICAgIHNldElzQ2xvY2tlZEluKGRhdGEuaXNDbG9ja2VkSW4pOwogICAgICB9CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgY29uc29sZS5lcnJvcignRmFpbGVkIHRvIGNoZWNrIGNsb2NrIHN0YXR1cycpOwogICAgfQogIH07CgogIGNvbnN0IGxvYWRMZWF2ZVJlcXVlc3RzID0gYXN5bmMgKCkgPT4gewogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnL2FwaS9sZWF2ZS1yZXF1ZXN0cycpOwogICAgICBpZiAocmVzcG9uc2Uub2spIHsKICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICAgIGNvbnN0IHVzZXJJZCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd1c2VySWQnKTsKICAgICAgICBjb25zdCBteVJlcXVlc3RzID0gZGF0YS5maWx0ZXIoKHJlcTogYW55KSA9PiByZXEuZW1wbG95ZWVfaWQgPT09IHVzZXJJZCk7CiAgICAgICAgc2V0TGVhdmVSZXF1ZXN0cyhteVJlcXVlc3RzKTsKICAgICAgfQogICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgIGNvbnNvbGUuZXJyb3IoJ0ZhaWxlZCB0byBsb2FkIGxlYXZlIHJlcXVlc3RzJyk7CiAgICB9CiAgfTsKCiAgY29uc3QgaGFuZGxlQ2xvY2tBY3Rpb24gPSBhc3luYyAoKSA9PiB7CiAgICBzZXRDbG9ja0FjdGlvbihpc0Nsb2NrZWRJbiA/ICdvdXQnIDogJ2luJyk7CiAgICBzZXRTaG93Q2FtZXJhKHRydWUpOwogICAgCiAgICB0cnkgewogICAgICBjb25zdCBtZWRpYVN0cmVhbSA9IGF3YWl0IG5hdmlnYXRvci5tZWRpYURldmljZXMuZ2V0VXNlck1lZGlhKHsgCiAgICAgICAgdmlkZW86IHsgZmFjaW5nTW9kZTogJ3VzZXInIH0gCiAgICAgIH0pOwogICAgICBzZXRTdHJlYW0obWVkaWFTdHJlYW0pOwogICAgICBpZiAodmlkZW9SZWYuY3VycmVudCkgewogICAgICAgIHZpZGVvUmVmLmN1cnJlbnQuc3JjT2JqZWN0ID0gbWVkaWFTdHJlYW07CiAgICAgIH0KICAgIH0gY2F0Y2ggKGVycikgewogICAgICBjb25zb2xlLmVycm9yKCdDYW1lcmEgYWNjZXNzIGRlbmllZDonLCBlcnIpOwogICAgICBzaG93Tm90aWZpY2F0aW9uKCdHYWdhbCBtZW5nYWtzZXMga2FtZXJhJywgJ2Vycm9yJyk7CiAgICAgIHNldFNob3dDYW1lcmEoZmFsc2UpOwogICAgfQogIH07CgogIGNvbnN0IGNhcHR1cmVQaG90byA9IGFzeW5jICgpID0+IHsKICAgIGlmICghdmlkZW9SZWYuY3VycmVudCB8fCAhY2FudmFzUmVmLmN1cnJlbnQpIHJldHVybjsKCiAgICBjb25zdCB2aWRlbyA9IHZpZGVvUmVmLmN1cnJlbnQ7CiAgICBjb25zdCBjYW52YXMgPSBjYW52YXNSZWYuY3VycmVudDsKICAgIGNhbnZhcy53aWR0aCA9IHZpZGVvLnZpZGVvV2lkdGg7CiAgICBjYW52YXMuaGVpZ2h0ID0gdmlkZW8udmlkZW9IZWlnaHQ7CiAgICBjb25zdCBjdHggPSBjYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKICAgIGlmICghY3R4KSByZXR1cm47CgogICAgY3R4LmRyYXdJbWFnZSh2aWRlbywgMCwgMCk7CiAgICBjb25zdCBwaG90b0RhdGFVcmwgPSBjYW52YXMudG9EYXRhVVJMKCdpbWFnZS9qcGVnJyk7CgogICAgLy8gU3RvcCBjYW1lcmEKICAgIGlmIChzdHJlYW0pIHsKICAgICAgc3RyZWFtLmdldFRyYWNrcygpLmZvckVhY2goKHRyYWNrKSA9PiB0cmFjay5zdG9wKCkpOwogICAgfQoKICAgIC8vIEdldCBsb2NhdGlvbiBpZiBjbG9ja2luZyBpbgogICAgbGV0IGxvY2F0aW9uRGF0YTogeyBsYXRpdHVkZT86IG51bWJlcjsgbG9uZ2l0dWRlPzogbnVtYmVyOyBhZGRyZXNzPzogc3RyaW5nIH0gPSB7fTsKICAgIAogICAgaWYgKGNsb2NrQWN0aW9uID09PSAnaW4nKSB7CiAgICAgIHRyeSB7CiAgICAgICAgY29uc3QgcG9zaXRpb24gPSBhd2FpdCBuZXcgUHJvbWlzZTxHZW9sb2NhdGlvblBvc2l0aW9uPigocmVzb2x2ZSwgcmVqZWN0KSA9PiB7CiAgICAgICAgICBuYXZpZ2F0b3IuZ2VvbG9jYXRpb24uZ2V0Q3VycmVudFBvc2l0aW9uKHJlc29sdmUsIHJlamVjdCwgewogICAgICAgICAgICBlbmFibGVIaWdoQWNjdXJhY3k6IHRydWUsCiAgICAgICAgICAgIHRpbWVvdXQ6IDEwMDAwLAogICAgICAgICAgICBtYXhpbXVtQWdlOiAwCiAgICAgICAgICB9KTsKICAgICAgICB9KTsKICAgICAgICAKICAgICAgICBsb2NhdGlvbkRhdGEubGF0aXR1ZGUgPSBwb3NpdGlvbi5jb29yZHMubGF0aXR1ZGU7CiAgICAgICAgbG9jYXRpb25EYXRhLmxvbmdpdHVkZSA9IHBvc2l0aW9uLmNvb3Jkcy5sb25naXR1ZGU7CiAgICAgICAgLy8gQWxhbWF0IGRpaXNpIG90b21hdGlzIG9sZWggYmFja2VuZCAocmV2ZXJzZS1nZW9jb2RlIHNlcnZlci1zaWRlKS4KICAgICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgICAgY29uc29sZS5lcnJvcignTG9jYXRpb24gYWNjZXNzIGRlbmllZDonLCBlcnIpOwogICAgICAgIHNob3dOb3RpZmljYXRpb24oJ0hhcmFwIGFrdGlma2FuIGFrc2VzIGxva2FzaSBkaSBwZW5nYXR1cmFuIGJyb3dzZXIgdW50dWsgbWVsYWt1a2FuIGNsb2NrIGluJywgJ2Vycm9yJyk7CiAgICAgICAgc2V0U2hvd0NhbWVyYShmYWxzZSk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CiAgICB9CgogICAgLy8gU3VibWl0IGF0dGVuZGFuY2UKICAgIHRyeSB7CiAgICAgIGNvbnN0IHVzZXJJZCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd1c2VySWQnKTsKICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnL2FwaS9hdHRlbmRhbmNlL2Nsb2NrJywgewogICAgICAgIG1ldGhvZDogJ1BPU1QnLAogICAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LAogICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsKICAgICAgICAgIHVzZXJJZCwKICAgICAgICAgIGFjdGlvbjogY2xvY2tBY3Rpb24sCiAgICAgICAgICBwaG90bzogcGhvdG9EYXRhVXJsLAogICAgICAgICAgLi4ubG9jYXRpb25EYXRhLAogICAgICAgIH0pLAogICAgICB9KTsKCiAgICAgIGlmIChyZXNwb25zZS5vaykgewogICAgICAgIHNob3dOb3RpZmljYXRpb24oCiAgICAgICAgICBjbG9ja0FjdGlvbiA9PT0gJ2luJyA/ICdDbG9jayBpbiBiZXJoYXNpbCEnIDogJ0Nsb2NrIG91dCBiZXJoYXNpbCEnLAogICAgICAgICAgJ3N1Y2Nlc3MnCiAgICAgICAgKTsKICAgICAgICBzZXRJc0Nsb2NrZWRJbihjbG9ja0FjdGlvbiA9PT0gJ2luJyk7CiAgICAgICAgc2V0U2hvd0NhbWVyYShmYWxzZSk7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKICAgICAgICBzaG93Tm90aWZpY2F0aW9uKGRhdGEuZXJyb3IgfHwgJ0dhZ2FsIG1lbGFrdWthbiBjbG9jaycsICdlcnJvcicpOwogICAgICB9CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgc2hvd05vdGlmaWNhdGlvbignVGVyamFkaSBrZXNhbGFoYW4nLCAnZXJyb3InKTsKICAgIH0KICB9OwoKICBjb25zdCBoYW5kbGVMZWF2ZVN1Ym1pdCA9IGFzeW5jIChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHsKICAgIGUucHJldmVudERlZmF1bHQoKTsKCiAgICB0cnkgewogICAgICBjb25zdCB1c2VySWQgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndXNlcklkJyk7CiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goJy9hcGkvbGVhdmUtcmVxdWVzdHMnLCB7CiAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoewogICAgICAgICAgdXNlcklkLAogICAgICAgICAgLi4ubGVhdmVGb3JtRGF0YSwKICAgICAgICB9KSwKICAgICAgfSk7CgogICAgICBpZiAocmVzcG9uc2Uub2spIHsKICAgICAgICBzaG93Tm90aWZpY2F0aW9uKCdQZXJtb2hvbmFuIGl6aW4gYmVyaGFzaWwgZGlhanVrYW4nLCAnc3VjY2VzcycpOwogICAgICAgIHNldFNob3dMZWF2ZU1vZGFsKGZhbHNlKTsKICAgICAgICBzZXRMZWF2ZUZvcm1EYXRhKHsKICAgICAgICAgIGxlYXZlX3R5cGU6ICdDdXRpIFRhaHVuYW4nLAogICAgICAgICAgcmVhc29uOiAnJywKICAgICAgICAgIHN0YXJ0X2RhdGU6ICcnLAogICAgICAgICAgZW5kX2RhdGU6ICcnLAogICAgICAgIH0pOwogICAgICAgIGxvYWRMZWF2ZVJlcXVlc3RzKCk7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTsKICAgICAgICBzaG93Tm90aWZpY2F0aW9uKGRhdGEuZXJyb3IgfHwgJ0dhZ2FsIG1lbmdhanVrYW4gaXppbicsICdlcnJvcicpOwogICAgICB9CiAgICB9IGNhdGNoIChlcnIpIHsKICAgICAgc2hvd05vdGlmaWNhdGlvbignVGVyamFkaSBrZXNhbGFoYW4nLCAnZXJyb3InKTsKICAgIH0KICB9OwoKICBjb25zdCBoYW5kbGVMb2dvdXQgPSAoKSA9PiB7CiAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndXNlclR5cGUnKTsKICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd1c2VySWQnKTsKICAgIG5hdmlnYXRlKCcvJyk7CiAgfTsKCiAgY29uc3QgZ2V0U3RhdHVzQmFkZ2UgPSAoc3RhdHVzOiBzdHJpbmcpID0+IHsKICAgIGNvbnN0IGNvbG9ycyA9IHsKICAgICAgcGVuZGluZzogJ2JnLXllbGxvdy0xMDAgdGV4dC15ZWxsb3ctODAwJywKICAgICAgYXBwcm92ZWQ6ICdiZy1ncmVlbi0xMDAgdGV4dC1ncmVlbi04MDAnLAogICAgICByZWplY3RlZDogJ2JnLXJlZC0xMDAgdGV4dC1yZWQtODAwJywKICAgIH07CiAgICBjb25zdCBsYWJlbHMgPSB7CiAgICAgIHBlbmRpbmc6ICdQZW5kaW5nJywKICAgICAgYXBwcm92ZWQ6ICdEaXNldHVqdWknLAogICAgICByZWplY3RlZDogJ0RpdG9sYWsnLAogICAgfTsKICAgIHJldHVybiAoCiAgICAgIDxzcGFuIGNsYXNzTmFtZT17YHB4LTMgcHktMSByb3VuZGVkLWZ1bGwgdGV4dC14cyBmb250LXNlbWlib2xkICR7Y29sb3JzW3N0YXR1cyBhcyBrZXlvZiB0eXBlb2YgY29sb3JzXX1gfT4KICAgICAgICB7bGFiZWxzW3N0YXR1cyBhcyBrZXlvZiB0eXBlb2YgbGFiZWxzXX0KICAgICAgPC9zcGFuPgogICAgKTsKICB9OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2BtaW4taC1zY3JlZW4gJHtpc0RhcmtNb2RlID8gJ2JnLWdyYXktOTAwIHRleHQtd2hpdGUnIDogJ2JnLWdyYWRpZW50LXRvLWIgZnJvbS1yZWQtNjAwIHZpYS15ZWxsb3ctNDAwIHRvLXJlZC02MDAnfWB9PgogICAgICB7LyogSGVhZGVyICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT17aXNEYXJrTW9kZSA/ICdiZy1ncmF5LTgwMCcgOiAnYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC02MDAgdG8tb3JhbmdlLTUwMCd9PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy03eGwgbXgtYXV0byBweC00IHB5LTYiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2B3LTEyIGgtMTIgcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyICR7CiAgICAgICAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLWdyYXktNzAwJyA6ICdiZy13aGl0ZScKICAgICAgICAgICAgICB9YH0+CiAgICAgICAgICAgICAgICA8VXNlciBjbGFzc05hbWU9e2B3LTYgaC02ICR7aXNEYXJrTW9kZSA/ICd0ZXh0LXdoaXRlJyA6ICd0ZXh0LXJlZC02MDAnfWB9IC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC14bCBmb250LWJvbGQiPlBUIE1hbGFrYSBFeHByZXNzIExpbmU8L2gxPgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtd2hpdGUvODAiPlBvcnRhbCBLYXJ5YXdhbjwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXt0b2dnbGVEYXJrTW9kZX0gY2xhc3NOYW1lPSJwLTIgaG92ZXI6Ymctd2hpdGUvMTAgcm91bmRlZC1sZyB0ZXh0LXdoaXRlIj4KICAgICAgICAgICAgICAgIHtpc0RhcmtNb2RlID8gPFN1biBjbGFzc05hbWU9InctNSBoLTUiIC8+IDogPE1vb24gY2xhc3NOYW1lPSJ3LTUgaC01IiAvPn0KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldExhbmd1YWdlKGxhbmd1YWdlID09PSAnaWQnID8gJ2VuJyA6ICdpZCcpfSBjbGFzc05hbWU9InAtMiBob3ZlcjpiZy13aGl0ZS8xMCByb3VuZGVkLWxnIHRleHQtd2hpdGUiPgogICAgICAgICAgICAgICAgPEdsb2JlIGNsYXNzTmFtZT0idy01IGgtNSIgLz4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7LyogTmF2aWdhdGlvbiAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9e2BzaGFkb3ctbWQgc3RpY2t5IHRvcC0wIHotMTAgJHtpc0RhcmtNb2RlID8gJ2JnLWdyYXktODAwJyA6ICdiZy13aGl0ZSd9YH0+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IG92ZXJmbG93LXgtYXV0byI+CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmVNZW51KCdkYXNoYm9hcmQnKX0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4LTEgbWluLXctbWF4IHB4LTYgcHktNCBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0yMDAgJHsKICAgICAgICAgICAgICAgIGFjdGl2ZU1lbnUgPT09ICdkYXNoYm9hcmQnCiAgICAgICAgICAgICAgICAgID8gaXNEYXJrTW9kZQogICAgICAgICAgICAgICAgICAgID8gJ3RleHQtcmVkLTQwMCBib3JkZXItYi0yIGJvcmRlci1yZWQtNDAwIGJnLWdyYXktNzAwJwogICAgICAgICAgICAgICAgICAgIDogJ3RleHQtcmVkLTYwMCBib3JkZXItYi0yIGJvcmRlci1yZWQtNjAwIGJnLXJlZC01MCcKICAgICAgICAgICAgICAgICAgOiBpc0RhcmtNb2RlCiAgICAgICAgICAgICAgICAgICAgPyAndGV4dC1ncmF5LTQwMCBob3ZlcjpiZy1ncmF5LTcwMCcKICAgICAgICAgICAgICAgICAgICA6ICd0ZXh0LWdyYXktNjAwIGhvdmVyOmJnLWdyYXktNTAnCiAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICBEYXNoYm9hcmQKICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmVNZW51KCdsZWF2ZScpfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YGZsZXgtMSBtaW4tdy1tYXggcHgtNiBweS00IGZvbnQtbWVkaXVtIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTIwMCAkewogICAgICAgICAgICAgICAgYWN0aXZlTWVudSA9PT0gJ2xlYXZlJwogICAgICAgICAgICAgICAgICA/IGlzRGFya01vZGUKICAgICAgICAgICAgICAgICAgICA/ICd0ZXh0LXJlZC00MDAgYm9yZGVyLWItMiBib3JkZXItcmVkLTQwMCBiZy1ncmF5LTcwMCcKICAgICAgICAgICAgICAgICAgICA6ICd0ZXh0LXJlZC02MDAgYm9yZGVyLWItMiBib3JkZXItcmVkLTYwMCBiZy1yZWQtNTAnCiAgICAgICAgICAgICAgICAgIDogaXNEYXJrTW9kZQogICAgICAgICAgICAgICAgICAgID8gJ3RleHQtZ3JheS00MDAgaG92ZXI6YmctZ3JheS03MDAnCiAgICAgICAgICAgICAgICAgICAgOiAndGV4dC1ncmF5LTYwMCBob3ZlcjpiZy1ncmF5LTUwJwogICAgICAgICAgICAgIH1gfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgUGVybW9ob25hbiBJemluCiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIE1haW4gY29udGVudCAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIHAtNCBtZDpwLTYgbGc6cC04Ij4KICAgICAgICB7YWN0aXZlTWVudSA9PT0gJ2Rhc2hib2FyZCcgJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktNiI+CiAgICAgICAgICAgIHsvKiBDbG9jayBpbi9vdXQgY2FyZCAqL30KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2Byb3VuZGVkLTJ4bCBzaGFkb3ctbGcgb3ZlcmZsb3ctaGlkZGVuICR7aXNEYXJrTW9kZSA/ICdiZy1ncmF5LTgwMCcgOiAnYmctd2hpdGUnfWB9PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgcC02ICR7aXNEYXJrTW9kZSA/ICdiZy1ncmF5LTcwMCcgOiAnYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC02MDAgdG8tb3JhbmdlLTUwMCd9IHRleHQtd2hpdGVgfT4KICAgICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCBtYi0yIj5BYnNlbnNpIEhhcmkgSW5pPC9oMj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC13aGl0ZS85MCI+e25ldyBEYXRlKCkudG9Mb2NhbGVEYXRlU3RyaW5nKCdpZC1JRCcsIHsgCiAgICAgICAgICAgICAgICAgIHdlZWtkYXk6ICdsb25nJywgCiAgICAgICAgICAgICAgICAgIHllYXI6ICdudW1lcmljJywgCiAgICAgICAgICAgICAgICAgIG1vbnRoOiAnbG9uZycsIAogICAgICAgICAgICAgICAgICBkYXk6ICdudW1lcmljJyAKICAgICAgICAgICAgICAgIH0pfTwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icC02Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtNiI+CiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgdGV4dC02eGwgZm9udC1ib2xkICR7aXNEYXJrTW9kZSA/ICd0ZXh0LXdoaXRlJyA6ICd0ZXh0LWdyYXktOTAwJ31gfT4KICAgICAgICAgICAgICAgICAgICB7bmV3IERhdGUoKS50b0xvY2FsZVRpbWVTdHJpbmcoJ2lkLUlEJywgeyAKICAgICAgICAgICAgICAgICAgICAgIGhvdXI6ICcyLWRpZ2l0JywgCiAgICAgICAgICAgICAgICAgICAgICBtaW51dGU6ICcyLWRpZ2l0JyAKICAgICAgICAgICAgICAgICAgICB9KX0KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17aGFuZGxlQ2xvY2tBY3Rpb259CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIG1heC13LW1kIHB5LTQgcHgtNiByb3VuZGVkLTJ4bCBmb250LWJvbGQgdGV4dC1sZyBzaGFkb3ctbGcgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMjAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0zICR7CiAgICAgICAgICAgICAgICAgICAgICBpc0Nsb2NrZWRJbgogICAgICAgICAgICAgICAgICAgICAgICA/ICdiZy1ncmFkaWVudC10by1yIGZyb20tb3JhbmdlLTYwMCB0by1yZWQtNjAwIHRleHQtd2hpdGUgaG92ZXI6c2hhZG93LXhsJwogICAgICAgICAgICAgICAgICAgICAgICA6ICdiZy1ncmFkaWVudC10by1yIGZyb20tZ3JlZW4tNjAwIHRvLWdyZWVuLTcwMCB0ZXh0LXdoaXRlIGhvdmVyOnNoYWRvdy14bCcKICAgICAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIDxDYW1lcmEgY2xhc3NOYW1lPSJ3LTYgaC02IiAvPgogICAgICAgICAgICAgICAgICAgIHtpc0Nsb2NrZWRJbiA/ICdDbG9jayBPdXQnIDogJ0Nsb2NrIEluJ30KICAgICAgICAgICAgICAgICAgPC9idXR0b24+CgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2B0ZXh0LXNtIHRleHQtY2VudGVyICR7aXNEYXJrTW9kZSA/ICd0ZXh0LWdyYXktNDAwJyA6ICd0ZXh0LWdyYXktNjAwJ31gfT4KICAgICAgICAgICAgICAgICAgICB7aXNDbG9ja2VkSW4gCiAgICAgICAgICAgICAgICAgICAgICA/ICdBbmRhIHN1ZGFoIG1lbGFrdWthbiBjbG9jayBpbiBoYXJpIGluaScgCiAgICAgICAgICAgICAgICAgICAgICA6ICdBbWJpbCBmb3RvIHNlbGZpZSB1bnR1ayBjbG9jayBpbid9CiAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CgogICAgICAgIHthY3RpdmVNZW51ID09PSAnbGVhdmUnICYmICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTYiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWVuZCI+CiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0U2hvd0xlYXZlTW9kYWwodHJ1ZSl9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLWdyYWRpZW50LXRvLXIgZnJvbS1yZWQtNjAwIHRvLW9yYW5nZS01MDAgdGV4dC13aGl0ZSBweC02IHB5LTMgcm91bmRlZC14bCBmb250LXNlbWlib2xkIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uLWFsbCIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8RmlsZVRleHQgY2xhc3NOYW1lPSJ3LTUgaC01IiAvPgogICAgICAgICAgICAgICAgQWp1a2FuIEl6aW4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICB7bGVhdmVSZXF1ZXN0cy5sZW5ndGggPT09IDAgPyAoCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2Byb3VuZGVkLTJ4bCBzaGFkb3ctbGcgcC04IHRleHQtY2VudGVyICR7aXNEYXJrTW9kZSA/ICdiZy1ncmF5LTgwMCcgOiAnYmctd2hpdGUnfWB9PgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPXtpc0RhcmtNb2RlID8gJ3RleHQtZ3JheS00MDAnIDogJ3RleHQtZ3JheS02MDAnfT5CZWx1bSBhZGEgcGVybW9ob25hbiBpemluPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApIDogKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTQiPgogICAgICAgICAgICAgICAge2xlYXZlUmVxdWVzdHMubWFwKChyZXF1ZXN0KSA9PiAoCiAgICAgICAgICAgICAgICAgIDxkaXYga2V5PXtyZXF1ZXN0LmlkfSBjbGFzc05hbWU9e2Byb3VuZGVkLTJ4bCBzaGFkb3ctbGcgcC02ICR7aXNEYXJrTW9kZSA/ICdiZy1ncmF5LTgwMCcgOiAnYmctd2hpdGUnfWB9PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLXN0YXJ0IGp1c3RpZnktYmV0d2VlbiBnYXAtNCBtYi00Ij4KICAgICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9ImZvbnQtYm9sZCB0ZXh0LWxnIj57cmVxdWVzdC5sZWF2ZV90eXBlfTwvaDM+CiAgICAgICAgICAgICAgICAgICAgICB7Z2V0U3RhdHVzQmFkZ2UocmVxdWVzdC5zdGF0dXMpfQogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgc3BhY2UteS0yIHRleHQtc20gJHtpc0RhcmtNb2RlID8gJ3RleHQtZ3JheS00MDAnIDogJ3RleHQtZ3JheS02MDAnfWB9PgogICAgICAgICAgICAgICAgICAgICAgPHA+PHNwYW4gY2xhc3NOYW1lPSJmb250LW1lZGl1bSI+UGVyaW9kZTo8L3NwYW4+IHtuZXcgRGF0ZShyZXF1ZXN0LnN0YXJ0X2RhdGUpLnRvTG9jYWxlRGF0ZVN0cmluZygnaWQtSUQnKX0gLSB7bmV3IERhdGUocmVxdWVzdC5lbmRfZGF0ZSkudG9Mb2NhbGVEYXRlU3RyaW5nKCdpZC1JRCcpfTwvcD4KICAgICAgICAgICAgICAgICAgICAgIDxwPjxzcGFuIGNsYXNzTmFtZT0iZm9udC1tZWRpdW0iPkFsYXNhbjo8L3NwYW4+IHtyZXF1ZXN0LnJlYXNvbn08L3A+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQoKICAgICAgICB7LyogTG9nb3V0IGJ1dHRvbiAqL30KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVMb2dvdXR9CiAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgbXQtNiBmb250LXNlbWlib2xkIHB5LTMgcHgtNiByb3VuZGVkLTJ4bCBzaGFkb3ctbWQgaG92ZXI6c2hhZG93LWxnIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTIwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiAkewogICAgICAgICAgICBpc0RhcmtNb2RlCiAgICAgICAgICAgICAgPyAnYmctZ3JheS04MDAgdGV4dC1yZWQtNDAwJwogICAgICAgICAgICAgIDogJ2JnLXdoaXRlIHRleHQtcmVkLTYwMCcKICAgICAgICAgIH1gfQogICAgICAgID4KICAgICAgICAgIDxMb2dPdXQgY2xhc3NOYW1lPSJ3LTUgaC01IiAvPgogICAgICAgICAgTG9nb3V0CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIENhbWVyYSBtb2RhbCAqL30KICAgICAge3Nob3dDYW1lcmEgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmaXhlZCBpbnNldC0wIGJnLWJsYWNrLzkwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHotNTAgcC00Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy13aGl0ZSByb3VuZGVkLTJ4bCBwLTYgbWF4LXctbWQgdy1mdWxsIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLWNlbnRlciBtYi00Ij4KICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LWdyYXktOTAwIj5BbWJpbCBGb3RvIFNlbGZpZTwvaDM+CiAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gewogICAgICAgICAgICAgICAgICBpZiAoc3RyZWFtKSB7CiAgICAgICAgICAgICAgICAgICAgc3RyZWFtLmdldFRyYWNrcygpLmZvckVhY2goKHRyYWNrKSA9PiB0cmFjay5zdG9wKCkpOwogICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgIHNldFNob3dDYW1lcmEoZmFsc2UpOwogICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icC0yIGhvdmVyOmJnLWdyYXktMTAwIHJvdW5kZWQtbGciCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPFggY2xhc3NOYW1lPSJ3LTUgaC01IHRleHQtZ3JheS02MDAiIC8+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYXNwZWN0LXNxdWFyZSBiZy1ncmF5LTkwMCByb3VuZGVkLXhsIG1iLTQgb3ZlcmZsb3ctaGlkZGVuIHJlbGF0aXZlIj4KICAgICAgICAgICAgICA8dmlkZW8KICAgICAgICAgICAgICAgIHJlZj17dmlkZW9SZWZ9CiAgICAgICAgICAgICAgICBhdXRvUGxheQogICAgICAgICAgICAgICAgcGxheXNJbmxpbmUKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGgtZnVsbCBvYmplY3QtY292ZXIiCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8Y2FudmFzIHJlZj17Y2FudmFzUmVmfSBjbGFzc05hbWU9ImhpZGRlbiIgLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBvbkNsaWNrPXtjYXB0dXJlUGhvdG99CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgcHktMyBiZy1ncmFkaWVudC10by1yIGZyb20tcmVkLTYwMCB0by1vcmFuZ2UtNTAwIHRleHQtd2hpdGUgcm91bmRlZC14bCBmb250LXNlbWlib2xkIGhvdmVyOnNoYWRvdy1sZyIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIEFtYmlsIEZvdG8gJiB7Y2xvY2tBY3Rpb24gPT09ICdpbicgPyAnQ2xvY2sgSW4nIDogJ0Nsb2NrIE91dCd9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CgogICAgICB7LyogTGVhdmUgcmVxdWVzdCBtb2RhbCAqL30KICAgICAge3Nob3dMZWF2ZU1vZGFsICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCBiZy1ibGFjay81MCBiYWNrZHJvcC1ibHVyLXNtIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHotNTAgcC00Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgdy1mdWxsIG1heC13LW1kIHJvdW5kZWQtMnhsIHNoYWRvdy0yeGwgJHtpc0RhcmtNb2RlID8gJ2JnLWdyYXktODAwJyA6ICdiZy13aGl0ZSd9YH0+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTYiPgogICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQteGwgZm9udC1ib2xkIG1iLTYiPkFqdWthbiBQZXJtb2hvbmFuIEl6aW48L2gzPgogICAgICAgICAgICAgIDxmb3JtIG9uU3VibWl0PXtoYW5kbGVMZWF2ZVN1Ym1pdH0gY2xhc3NOYW1lPSJzcGFjZS15LTQiPgogICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSBtYi0yIj5KZW5pcyBJemluPC9sYWJlbD4KICAgICAgICAgICAgICAgICAgPHNlbGVjdAogICAgICAgICAgICAgICAgICAgIHZhbHVlPXtsZWF2ZUZvcm1EYXRhLmxlYXZlX3R5cGV9CiAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRMZWF2ZUZvcm1EYXRhKHsgLi4ubGVhdmVGb3JtRGF0YSwgbGVhdmVfdHlwZTogZS50YXJnZXQudmFsdWUgfSl9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIHB4LTQgcHktMyByb3VuZGVkLXhsIGJvcmRlci0yIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1yZWQtNTAwICR7CiAgICAgICAgICAgICAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLWdyYXktNzAwIGJvcmRlci1ncmF5LTYwMCcgOiAnYmctd2hpdGUgYm9yZGVyLWdyYXktMzAwJwogICAgICAgICAgICAgICAgICAgIH1gfQogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAge2xlYXZlVHlwZXMubWFwKCh0eXBlKSA9PiAoCiAgICAgICAgICAgICAgICAgICAgICA8b3B0aW9uIGtleT17dHlwZX0gdmFsdWU9e3R5cGV9Pnt0eXBlfTwvb3B0aW9uPgogICAgICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgICAgICA8L3NlbGVjdD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSBtYi0yIj5UYW5nZ2FsIE11bGFpPC9sYWJlbD4KICAgICAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICAgICAgdHlwZT0iZGF0ZSIKICAgICAgICAgICAgICAgICAgICByZXF1aXJlZAogICAgICAgICAgICAgICAgICAgIHZhbHVlPXtsZWF2ZUZvcm1EYXRhLnN0YXJ0X2RhdGV9CiAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRMZWF2ZUZvcm1EYXRhKHsgLi4ubGVhdmVGb3JtRGF0YSwgc3RhcnRfZGF0ZTogZS50YXJnZXQudmFsdWUgfSl9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIHB4LTQgcHktMyByb3VuZGVkLXhsIGJvcmRlci0yIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1yZWQtNTAwICR7CiAgICAgICAgICAgICAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLWdyYXktNzAwIGJvcmRlci1ncmF5LTYwMCcgOiAnYmctd2hpdGUgYm9yZGVyLWdyYXktMzAwJwogICAgICAgICAgICAgICAgICAgIH1gfQogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtbWVkaXVtIG1iLTIiPlRhbmdnYWwgU2VsZXNhaTwvbGFiZWw+CiAgICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICAgIHR5cGU9ImRhdGUiCiAgICAgICAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgICAgICAgICB2YWx1ZT17bGVhdmVGb3JtRGF0YS5lbmRfZGF0ZX0KICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldExlYXZlRm9ybURhdGEoeyAuLi5sZWF2ZUZvcm1EYXRhLCBlbmRfZGF0ZTogZS50YXJnZXQudmFsdWUgfSl9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIHB4LTQgcHktMyByb3VuZGVkLXhsIGJvcmRlci0yIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1yZWQtNTAwICR7CiAgICAgICAgICAgICAgICAgICAgICBpc0RhcmtNb2RlID8gJ2JnLWdyYXktNzAwIGJvcmRlci1ncmF5LTYwMCcgOiAnYmctd2hpdGUgYm9yZGVyLWdyYXktMzAwJwogICAgICAgICAgICAgICAgICAgIH1gfQogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtbWVkaXVtIG1iLTIiPkFsYXNhbjwvbGFiZWw+CiAgICAgICAgICAgICAgICAgIDx0ZXh0YXJlYQogICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICAgICAgICAgICAgcm93cz17NH0KICAgICAgICAgICAgICAgICAgICB2YWx1ZT17bGVhdmVGb3JtRGF0YS5yZWFzb259CiAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRMZWF2ZUZvcm1EYXRhKHsgLi4ubGVhdmVGb3JtRGF0YSwgcmVhc29uOiBlLnRhcmdldC52YWx1ZSB9KX0KICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgcHgtNCBweS0zIHJvdW5kZWQteGwgYm9yZGVyLTIgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLXJlZC01MDAgJHsKICAgICAgICAgICAgICAgICAgICAgIGlzRGFya01vZGUgPyAnYmctZ3JheS03MDAgYm9yZGVyLWdyYXktNjAwJyA6ICdiZy13aGl0ZSBib3JkZXItZ3JheS0zMDAnCiAgICAgICAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IkplbGFza2FuIGFsYXNhbiBwZXJtb2hvbmFuIGl6aW4uLi4iCiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0zIHB0LTQiPgogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFNob3dMZWF2ZU1vZGFsKGZhbHNlKX0KICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4LTEgcHktMyByb3VuZGVkLXhsIGZvbnQtc2VtaWJvbGQgJHsKICAgICAgICAgICAgICAgICAgICAgIGlzRGFya01vZGUKICAgICAgICAgICAgICAgICAgICAgICAgPyAnYmctZ3JheS03MDAgdGV4dC13aGl0ZSBob3ZlcjpiZy1ncmF5LTYwMCcKICAgICAgICAgICAgICAgICAgICAgICAgOiAnYmctZ3JheS0yMDAgdGV4dC1ncmF5LTcwMCBob3ZlcjpiZy1ncmF5LTMwMCcKICAgICAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIEJhdGFsCiAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgdHlwZT0ic3VibWl0IgogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleC0xIHB5LTMgYmctZ3JhZGllbnQtdG8tciBmcm9tLXJlZC02MDAgdG8tb3JhbmdlLTUwMCB0ZXh0LXdoaXRlIHJvdW5kZWQteGwgZm9udC1zZW1pYm9sZCBob3ZlcjpzaGFkb3ctbGciCiAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICBBanVrYW4KICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L2Zvcm0+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router';
+import { 
+  LogOut,
+  Camera,
+  User,
+  Moon,
+  Sun,
+  Globe,
+  X,
+  FileText
+} from 'lucide-react';
+import { useApp } from '@/react-app/contexts/AppContext';
+
+const leaveTypes = [
+  'Cuti Tahunan',
+  'Sakit',
+  'Izin Menikah',
+  'Izin Melahirkan',
+  'Izin Keluarga',
+  'Lainnya',
+];
+
+export default function EmployeeDashboard() {
+  const navigate = useNavigate();
+  const { isDarkMode, toggleDarkMode, language, setLanguage, showNotification } = useApp();
+  const [activeMenu, setActiveMenu] = useState('dashboard');
+  const [isClockedIn, setIsClockedIn] = useState(false);
+  const [showCamera, setShowCamera] = useState(false);
+  const [showLeaveModal, setShowLeaveModal] = useState(false);
+  const [clockAction, setClockAction] = useState<'in' | 'out'>('in');
+  const [leaveRequests, setLeaveRequests] = useState<any[]>([]);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [stream, setStream] = useState<MediaStream | null>(null);
+  const [leaveFormData, setLeaveFormData] = useState({
+    leave_type: 'Cuti Tahunan',
+    reason: '',
+    start_date: '',
+    end_date: '',
+  });
+
+  useEffect(() => {
+    const userType = localStorage.getItem('userType');
+    if (userType !== 'karyawan') {
+      navigate('/');
+    }
+    checkClockStatus();
+    loadLeaveRequests();
+    checkLocationPermission();
+  }, [navigate]);
+
+  const checkLocationPermission = async () => {
+    if (!navigator.geolocation) {
+      showNotification('Browser Anda tidak mendukung lokasi GPS', 'error');
+      return;
+    }
+
+    try {
+      const permission = await navigator.permissions.query({ name: 'geolocation' });
+      
+      if (permission.state === 'denied') {
+        showNotification('Harap aktifkan akses lokasi di pengaturan browser untuk melakukan absensi', 'error');
+      } else if (permission.state === 'prompt') {
+        showNotification('Anda akan diminta mengaktifkan lokasi saat melakukan clock in', 'info');
+      }
+
+      permission.addEventListener('change', () => {
+        if (permission.state === 'denied') {
+          showNotification('Akses lokasi ditolak. Harap aktifkan untuk melakukan clock in', 'error');
+        } else if (permission.state === 'granted') {
+          showNotification('Akses lokasi diaktifkan', 'success');
+        }
+      });
+    } catch (err) {
+      console.error('Error checking location permission:', err);
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+      }
+    };
+  }, [stream]);
+
+  const checkClockStatus = async () => {
+    try {
+      const userId = localStorage.getItem('userId');
+      const response = await fetch(`/api/attendance/status?userId=${userId}`);
+      if (response.ok) {
+        const data = await response.json();
+        setIsClockedIn(data.isClockedIn);
+      }
+    } catch (err) {
+      console.error('Failed to check clock status');
+    }
+  };
+
+  const loadLeaveRequests = async () => {
+    try {
+      const response = await fetch('/api/leave-requests');
+      if (response.ok) {
+        const data = await response.json();
+        const userId = localStorage.getItem('userId');
+        const myRequests = data.filter((req: any) => req.employee_id === userId);
+        setLeaveRequests(myRequests);
+      }
+    } catch (err) {
+      console.error('Failed to load leave requests');
+    }
+  };
+
+  const handleClockAction = async () => {
+    setClockAction(isClockedIn ? 'out' : 'in');
+    setShowCamera(true);
+    
+    try {
+      const mediaStream = await navigator.mediaDevices.getUserMedia({ 
+        video: { facingMode: 'user' } 
+      });
+      setStream(mediaStream);
+      if (videoRef.current) {
+        videoRef.current.srcObject = mediaStream;
+      }
+    } catch (err) {
+      console.error('Camera access denied:', err);
+      showNotification('Gagal mengakses kamera', 'error');
+      setShowCamera(false);
+    }
+  };
+
+  const capturePhoto = async () => {
+    if (!videoRef.current || !canvasRef.current) return;
+
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    ctx.drawImage(video, 0, 0);
+    const photoDataUrl = canvas.toDataURL('image/jpeg');
+
+    // Stop camera
+    if (stream) {
+      stream.getTracks().forEach((track) => track.stop());
+    }
+
+    // Get location if clocking in
+    let locationData: { latitude?: number; longitude?: number; address?: string } = {};
+    
+    if (clockAction === 'in') {
+      try {
+        const position = await new Promise<GeolocationPosition>((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(resolve, reject, {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+          });
+        });
+        
+        locationData.latitude = position.coords.latitude;
+        locationData.longitude = position.coords.longitude;
+        // Alamat diisi otomatis oleh backend (reverse-geocode server-side).
+      } catch (err) {
+        console.error('Location access denied:', err);
+        showNotification('Harap aktifkan akses lokasi di pengaturan browser untuk melakukan clock in', 'error');
+        setShowCamera(false);
+        return;
+      }
+    }
+
+    // Submit attendance
+    try {
+      const userId = localStorage.getItem('userId');
+      const response = await fetch('/api/attendance/clock', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          action: clockAction,
+          photo: photoDataUrl,
+          ...locationData,
+        }),
+      });
+
+      if (response.ok) {
+        showNotification(
+          clockAction === 'in' ? 'Clock in berhasil!' : 'Clock out berhasil!',
+          'success'
+        );
+        setIsClockedIn(clockAction === 'in');
+        setShowCamera(false);
+      } else {
+        const data = await response.json();
+        showNotification(data.error || 'Gagal melakukan clock', 'error');
+      }
+    } catch (err) {
+      showNotification('Terjadi kesalahan', 'error');
+    }
+  };
+
+  const handleLeaveSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const userId = localStorage.getItem('userId');
+      const response = await fetch('/api/leave-requests', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          ...leaveFormData,
+        }),
+      });
+
+      if (response.ok) {
+        showNotification('Permohonan izin berhasil diajukan', 'success');
+        setShowLeaveModal(false);
+        setLeaveFormData({
+          leave_type: 'Cuti Tahunan',
+          reason: '',
+          start_date: '',
+          end_date: '',
+        });
+        loadLeaveRequests();
+      } else {
+        const data = await response.json();
+        showNotification(data.error || 'Gagal mengajukan izin', 'error');
+      }
+    } catch (err) {
+      showNotification('Terjadi kesalahan', 'error');
+    }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('userType');
+    localStorage.removeItem('userId');
+    navigate('/');
+  };
+
+  const getStatusBadge = (status: string) => {
+    const colors = {
+      pending: 'bg-yellow-100 text-yellow-800',
+      approved: 'bg-green-100 text-green-800',
+      rejected: 'bg-red-100 text-red-800',
+    };
+    const labels = {
+      pending: 'Pending',
+      approved: 'Disetujui',
+      rejected: 'Ditolak',
+    };
+    return (
+      <span className={`px-3 py-1 rounded-full text-xs font-semibold ${colors[status as keyof typeof colors]}`}>
+        {labels[status as keyof typeof labels]}
+      </span>
+    );
+  };
+
+  return (
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-b from-red-600 via-yellow-400 to-red-600'}`}>
+      {/* Header */}
+      <div className={isDarkMode ? 'bg-gray-800' : 'bg-gradient-to-r from-red-600 to-orange-500'}>
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
+                isDarkMode ? 'bg-gray-700' : 'bg-white'
+              }`}>
+                <User className={`w-6 h-6 ${isDarkMode ? 'text-white' : 'text-red-600'}`} />
+              </div>
+              <div className="text-white">
+                <h1 className="text-xl font-bold">PT Malaka Express Line</h1>
+                <p className="text-sm text-white/80">Portal Karyawan</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <button onClick={toggleDarkMode} className="p-2 hover:bg-white/10 rounded-lg text-white">
+                {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+              <button onClick={() => setLanguage(language === 'id' ? 'en' : 'id')} className="p-2 hover:bg-white/10 rounded-lg text-white">
+                <Globe className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation */}
+      <div className={`shadow-md sticky top-0 z-10 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex overflow-x-auto">
+            <button
+              onClick={() => setActiveMenu('dashboard')}
+              className={`flex-1 min-w-max px-6 py-4 font-medium transition-all duration-200 ${
+                activeMenu === 'dashboard'
+                  ? isDarkMode
+                    ? 'text-red-400 border-b-2 border-red-400 bg-gray-700'
+                    : 'text-red-600 border-b-2 border-red-600 bg-red-50'
+                  : isDarkMode
+                    ? 'text-gray-400 hover:bg-gray-700'
+                    : 'text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              Dashboard
+            </button>
+            <button
+              onClick={() => setActiveMenu('leave')}
+              className={`flex-1 min-w-max px-6 py-4 font-medium transition-all duration-200 ${
+                activeMenu === 'leave'
+                  ? isDarkMode
+                    ? 'text-red-400 border-b-2 border-red-400 bg-gray-700'
+                    : 'text-red-600 border-b-2 border-red-600 bg-red-50'
+                  : isDarkMode
+                    ? 'text-gray-400 hover:bg-gray-700'
+                    : 'text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              Permohonan Izin
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+        {activeMenu === 'dashboard' && (
+          <div className="space-y-6">
+            {/* Clock in/out card */}
+            <div className={`rounded-2xl shadow-lg overflow-hidden ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+              <div className={`p-6 ${isDarkMode ? 'bg-gray-700' : 'bg-gradient-to-r from-red-600 to-orange-500'} text-white`}>
+                <h2 className="text-2xl font-bold mb-2">Absensi Hari Ini</h2>
+                <p className="text-white/90">{new Date().toLocaleDateString('id-ID', { 
+                  weekday: 'long', 
+                  year: 'numeric', 
+                  month: 'long', 
+                  day: 'numeric' 
+                })}</p>
+              </div>
+              <div className="p-6">
+                <div className="flex flex-col items-center gap-6">
+                  <div className={`text-6xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                    {new Date().toLocaleTimeString('id-ID', { 
+                      hour: '2-digit', 
+                      minute: '2-digit' 
+                    })}
+                  </div>
+                  
+                  <button
+                    onClick={handleClockAction}
+                    className={`w-full max-w-md py-4 px-6 rounded-2xl font-bold text-lg shadow-lg transition-all duration-200 flex items-center justify-center gap-3 ${
+                      isClockedIn
+                        ? 'bg-gradient-to-r from-orange-600 to-red-600 text-white hover:shadow-xl'
+                        : 'bg-gradient-to-r from-green-600 to-green-700 text-white hover:shadow-xl'
+                    }`}
+                  >
+                    <Camera className="w-6 h-6" />
+                    {isClockedIn ? 'Clock Out' : 'Clock In'}
+                  </button>
+
+                  <p className={`text-sm text-center ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                    {isClockedIn 
+                      ? 'Anda sudah melakukan clock in hari ini' 
+                      : 'Ambil foto selfie untuk clock in'}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeMenu === 'leave' && (
+          <div className="space-y-6">
+            <div className="flex justify-end">
+              <button
+                onClick={() => setShowLeaveModal(true)}
+                className="bg-gradient-to-r from-red-600 to-orange-500 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg transition-all"
+              >
+                <FileText className="w-5 h-5" />
+                Ajukan Izin
+              </button>
+            </div>
+
+            {leaveRequests.length === 0 ? (
+              <div className={`rounded-2xl shadow-lg p-8 text-center ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Belum ada permohonan izin</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {leaveRequests.map((request) => (
+                  <div key={request.id} className={`rounded-2xl shadow-lg p-6 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+                    <div className="flex items-start justify-between gap-4 mb-4">
+                      <h3 className="font-bold text-lg">{request.leave_type}</h3>
+                      {getStatusBadge(request.status)}
+                    </div>
+                    <div className={`space-y-2 text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                      <p><span className="font-medium">Periode:</span> {new Date(request.start_date).toLocaleDateString('id-ID')} - {new Date(request.end_date).toLocaleDateString('id-ID')}</p>
+                      <p><span className="font-medium">Alasan:</span> {request.reason}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Logout button */}
+        <button
+          onClick={handleLogout}
+          className={`w-full mt-6 font-semibold py-3 px-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 ${
+            isDarkMode
+              ? 'bg-gray-800 text-red-400'
+              : 'bg-white text-red-600'
+          }`}
+        >
+          <LogOut className="w-5 h-5" />
+          Logout
+        </button>
+      </div>
+
+      {/* Camera modal */}
+      {showCamera && (
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl p-6 max-w-md w-full">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-xl font-bold text-gray-900">Ambil Foto Selfie</h3>
+              <button
+                onClick={() => {
+                  if (stream) {
+                    stream.getTracks().forEach((track) => track.stop());
+                  }
+                  setShowCamera(false);
+                }}
+                className="p-2 hover:bg-gray-100 rounded-lg"
+              >
+                <X className="w-5 h-5 text-gray-600" />
+              </button>
+            </div>
+            <div className="aspect-square bg-gray-900 rounded-xl mb-4 overflow-hidden relative">
+              <video
+                ref={videoRef}
+                autoPlay
+                playsInline
+                className="w-full h-full object-cover"
+              />
+              <canvas ref={canvasRef} className="hidden" />
+            </div>
+            <button
+              onClick={capturePhoto}
+              className="w-full py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-xl font-semibold hover:shadow-lg"
+            >
+              Ambil Foto & {clockAction === 'in' ? 'Clock In' : 'Clock Out'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Leave request modal */}
+      {showLeaveModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className={`w-full max-w-md rounded-2xl shadow-2xl ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-6">Ajukan Permohonan Izin</h3>
+              <form onSubmit={handleLeaveSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-2">Jenis Izin</label>
+                  <select
+                    value={leaveFormData.leave_type}
+                    onChange={(e) => setLeaveFormData({ ...leaveFormData, leave_type: e.target.value })}
+                    className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none focus:ring-2 focus:ring-red-500 ${
+                      isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'
+                    }`}
+                  >
+                    {leaveTypes.map((type) => (
+                      <option key={type} value={type}>{type}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Tanggal Mulai</label>
+                  <input
+                    type="date"
+                    required
+                    value={leaveFormData.start_date}
+                    onChange={(e) => setLeaveFormData({ ...leaveFormData, start_date: e.target.value })}
+                    className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none focus:ring-2 focus:ring-red-500 ${
+                      isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Tanggal Selesai</label>
+                  <input
+                    type="date"
+                    required
+                    value={leaveFormData.end_date}
+                    onChange={(e) => setLeaveFormData({ ...leaveFormData, end_date: e.target.value })}
+                    className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none focus:ring-2 focus:ring-red-500 ${
+                      isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">Alasan</label>
+                  <textarea
+                    required
+                    rows={4}
+                    value={leaveFormData.reason}
+                    onChange={(e) => setLeaveFormData({ ...leaveFormData, reason: e.target.value })}
+                    className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none focus:ring-2 focus:ring-red-500 ${
+                      isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'
+                    }`}
+                    placeholder="Jelaskan alasan permohonan izin..."
+                  />
+                </div>
+                <div className="flex gap-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => setShowLeaveModal(false)}
+                    className={`flex-1 py-3 rounded-xl font-semibold ${
+                      isDarkMode
+                        ? 'bg-gray-700 text-white hover:bg-gray-600'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    }`}
+                  >
+                    Batal
+                  </button>
+                  <button
+                    type="submit"
+                    className="flex-1 py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-xl font-semibold hover:shadow-lg"
+                  >
+                    Ajukan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
