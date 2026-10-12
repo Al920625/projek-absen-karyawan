@@ -1,1 +1,64 @@
-IyBTZXR1cCBTdXBhYmFzZSDigJQgQXBsaWthc2kgQWJzZW5zaSBQVCBNYWxha2EgRXhwcmVzcyBMaW5lCgpQYW5kdWFuIHNla2FsaSBzZXR1cCBhZ2FyIGJhY2tlbmQgKGBuZXRsaWZ5L2Z1bmN0aW9ucy9hcGkudHNgKSBiaXNhIGphbGFuLgoKIyMgMS4gQnVhdCBwcm9qZWN0IFN1cGFiYXNlCgoxLiBCdWthIGh0dHBzOi8vc3VwYWJhc2UuY29tIOKGkiAqKk5ldyBwcm9qZWN0KioKMi4gSXNpIG5hbWEgcHJvamVjdCAobWlzLiBgYWJzZW5zaS1tYWxha2FgKSwgcGlsaWggcmVnaW9uICoqU2luZ2Fwb3JlKioKMy4gU2ltcGFuICoqZGF0YWJhc2UgcGFzc3dvcmQqKiBiYWlrLWJhaWsKNC4gVHVuZ2d1IHByb2plY3Qgc2VsZXNhaSBkaWJ1YXQgKMKxMiBtZW5pdCkKCiMjIDIuIEphbGFua2FuIG1pZ3JhdGlvbiBTUUwKCjEuIERpIGRhc2hib2FyZCBTdXBhYmFzZSDihpIgKipTUUwgRWRpdG9yKiog4oaSICoqTmV3IHF1ZXJ5KioKMi4gQnVrYSBmaWxlIGBzdXBhYmFzZS9taWdyYXRpb25zLzAwMV9hdHRlbmRhbmNlLnNxbGAgZGkgcmVwbyBpbmkKMy4gQ29weSBzZWx1cnVoIGlzaSDihpIgcGFzdGUga2UgU1FMIEVkaXRvciDihpIgKipSdW4qKgo0LiBQYXN0aWthbiBtdW5jdWwgIlN1Y2Nlc3MiICh0YWJlbCArIHNlZWQgZGF0YSB0ZXJidWF0KQoKQ2VrOiBtZW51ICoqVGFibGUgRWRpdG9yKiog4oaSIHRhYmVsIGBhZG1pbnNgIGJlcmlzaSAxIGJhcmlzIChgYWRtaW5gKSwKdGFiZWwgYGVtcGxveWVlc2AgYmVyaXNpIDMgYmFyaXMgKGBLUlkwMDFgLCBgS1JZMDAyYCwgYEtSWTAwM2ApLgoKIyMgMy4gQW1iaWwgQVBJIGtleXMKCjEuIERhc2hib2FyZCBTdXBhYmFzZSDihpIgKipQcm9qZWN0IFNldHRpbmdzKiogKGlrb24gZ2Vhcikg4oaSICoqQVBJKioKMi4gU2FsaW46CiAgIC0gKipQcm9qZWN0IFVSTCoqIOKGkiBgaHR0cHM6Ly94eHh4LnN1cGFiYXNlLmNvYAogICAtICoqc2VydmljZV9yb2xlIGtleSoqIChrbGlrIFJldmVhbCkg4oaSIGBleUpoYkcuLi5gIChSQUhBU0lBLCBqYW5nYW4gZGlzZWJhcikKCiMjIDQuIFNldCBlbnZpcm9ubWVudCB2YXJpYWJsZXMgZGkgTmV0bGlmeQoKMS4gQnVrYSBodHRwczovL2FwcC5uZXRsaWZ5LmNvbSDihpIgcGlsaWggc2l0ZSBgc3RhdGVseS1oYW1zdGVyLWE4MTYwY2AKICAgKGF0YXUgc2l0ZSBiYXJ1IGhhc2lsIGRlcGxveSByZXBvIGluaSkKMi4gKipTaXRlIHNldHRpbmdzKiog4oaSICoqRW52aXJvbm1lbnQgdmFyaWFibGVzKiog4oaSICoqQWRkIGEgdmFyaWFibGUqKjoKICAgLSBLZXk6IGBTVVBBQkFTRV9VUkxgIOKAlCBWYWx1ZTogUHJvamVjdCBVUkwgZGFyaSBsYW5na2FoIDMKICAgLSBLZXk6IGBTVVBBQkFTRV9TRVJWSUNFX1JPTEVfS0VZYCDigJQgVmFsdWU6IHNlcnZpY2Vfcm9sZSBrZXkgZGFyaSBsYW5na2FoIDMKMy4gKipEZXBsb3lzKiog4oaSICoqVHJpZ2dlciBkZXBsb3kqKiDihpIgKipEZXBsb3kgc2l0ZSoqIChhZ2FyIGVudiB2YXIgYWt0aWYpCgojIyA1LiBBa3VuIGRlZmF1bHQKCnwgUGVyYW4gICAgfCBVc2VyIElEIHwgUGFzc3dvcmQgICAgfAp8LS0tLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBBZG1pbiAgICB8IGFkbWluICAgfCBhZG1pbjEyMyAgICB8CnwgS2FyeWF3YW4gfCBLUlkwMDEgIHwga2FyeWF3YW4xMjMgfAp8IEthcnlhd2FuIHwgS1JZMDAyICB8IGthcnlhd2FuMTIzIHwKfCBLYXJ5YXdhbiB8IEtSWTAwMyAgfCBrYXJ5YXdhbjEyMyB8Cgo+IEdhbnRpIHBhc3N3b3JkIGRlZmF1bHQgc2V0ZWxhaCBsb2dpbiBwZXJ0YW1hIHZpYSBtZW51IFBhbmVsIEFkbWluLgoKIyMgNi4gVmVyaWZpa2FzaQoKQnVrYSBgaHR0cHM6Ly88c2l0ZS1hbmRhPi5uZXRsaWZ5LmFwcC9hcGkvaGVhbHRoYCDihpIgaGFydXMgYmFsYXM6CmBgYGpzb24KeyJzdGF0dXMiOiJvayIsInRpbWVzdGFtcCI6Ii4uLiJ9CmBgYAoKTGFsdSBsb2dpbiBzZWJhZ2FpIGFkbWluIGRpIGhhbGFtYW4gdXRhbWEuCgojIyBDYXRhdGFuCgotIEZvdG8gYWJzZW5zaSBkaXNpbXBhbiBzZWJhZ2FpIGRhdGEtVVJMIChiYXNlNjQpIGRpIGtvbG9tIGBjbG9ja19pbl9waG90b2AgLwogIGBjbG9ja19vdXRfcGhvdG9gLiBVbnR1ayBza2FsYSBiZXNhciwgcGluZGFoa2FuIGtlIFN1cGFiYXNlIFN0b3JhZ2UuCi0gUGVyaGl0dW5nYW4gImhhcmkgaW5pIiBtZW1ha2FpIHpvbmEgKipXSUIgKEFzaWEvSmFrYXJ0YSkqKi4KLSBBbGFtYXQgbG9rYXNpIGRpaXNpIG90b21hdGlzIG9sZWggYmFja2VuZCAocmV2ZXJzZS1nZW9jb2RlIE5vbWluYXRpbSkKICBzYWF0IGNsb2NrLWluIG1lbmdpcmltIGxhdGl0dWRlL2xvbmdpdHVkZS4K
+# Setup Supabase — Aplikasi Absensi PT Malaka Express Line
+
+Panduan sekali setup agar backend (`netlify/functions/api.ts`) bisa jalan.
+
+## 1. Buat project Supabase
+
+1. Buka https://supabase.com → **New project**
+2. Isi nama project (mis. `absensi-malaka`), pilih region **Singapore**
+3. Simpan **database password** baik-baik
+4. Tunggu project selesai dibuat (±2 menit)
+
+## 2. Jalankan migration SQL
+
+1. Di dashboard Supabase → **SQL Editor** → **New query**
+2. Buka file `supabase/migrations/001_attendance.sql` di repo ini
+3. Copy seluruh isi → paste ke SQL Editor → **Run**
+4. Pastikan muncul "Success" (tabel + seed data terbuat)
+
+Cek: menu **Table Editor** → tabel `admins` berisi 1 baris (`admin`),
+tabel `employees` berisi 3 baris (`KRY001`, `KRY002`, `KRY003`).
+
+## 3. Ambil API keys
+
+1. Dashboard Supabase → **Project Settings** (ikon gear) → **API**
+2. Salin:
+   - **Project URL** → `https://xxxx.supabase.co`
+   - **service_role key** (klik Reveal) → `eyJhbG...` (RAHASIA, jangan disebar)
+
+## 4. Set environment variables di Netlify
+
+1. Buka https://app.netlify.com → pilih site `stately-hamster-a8160c`
+   (atau site baru hasil deploy repo ini)
+2. **Site settings** → **Environment variables** → **Add a variable**:
+   - Key: `SUPABASE_URL` — Value: Project URL dari langkah 3
+   - Key: `SUPABASE_SERVICE_ROLE_KEY` — Value: service_role key dari langkah 3
+3. **Deploys** → **Trigger deploy** → **Deploy site** (agar env var aktif)
+
+## 5. Akun default
+
+| Peran    | User ID | Password    |
+|----------|---------|-------------|
+| Admin    | admin   | admin123    |
+| Karyawan | KRY001  | karyawan123 |
+| Karyawan | KRY002  | karyawan123 |
+| Karyawan | KRY003  | karyawan123 |
+
+> Ganti password default setelah login pertama via menu Panel Admin.
+
+## 6. Verifikasi
+
+Buka `https://<site-anda>.netlify.app/api/health` → harus balas:
+```json
+{"status":"ok","timestamp":"..."}
+```
+
+Lalu login sebagai admin di halaman utama.
+
+## Catatan
+
+- Foto absensi disimpan sebagai data-URL (base64) di kolom `clock_in_photo` /
+  `clock_out_photo`. Untuk skala besar, pindahkan ke Supabase Storage.
+- Perhitungan "hari ini" memakai zona **WIB (Asia/Jakarta)**.
+- Alamat lokasi diisi otomatis oleh backend (reverse-geocode Nominatim)
+  saat clock-in mengirim latitude/longitude.
