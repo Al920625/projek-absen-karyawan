@@ -1,1 +1,96 @@
-LS0gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci0tIFBUIE1hbGFrYSBFeHByZXNzIExpbmUg4oCUIFNpc3RlbSBBYnNlbnNpCi0tIE1pZ3JhdGlvbiAwMDE6IHRhYmVsICsgc2VlZCBkYXRhCi0tIEphbGFua2FuIGRpIFN1cGFiYXNlIFNRTCBFZGl0b3IgKHByb2plY3QgYmFydSkuCi0tID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKLS0gLS0tLS0tLS0tLSBlbXBsb3llZXMgLS0tLS0tLS0tLQpjcmVhdGUgdGFibGUgaWYgbm90IGV4aXN0cyBwdWJsaWMuZW1wbG95ZWVzICgKICBpZCB1dWlkIHByaW1hcnkga2V5IGRlZmF1bHQgZ2VuX3JhbmRvbV91dWlkKCksCiAgdXNlcl9pZCB0ZXh0IHVuaXF1ZSBub3QgbnVsbCwKICBuYW1lIHRleHQgbm90IG51bGwsCiAgZW1haWwgdGV4dCwKICBwaG9uZSB0ZXh0LAogIHBvc2l0aW9uIHRleHQsCiAgZGVwYXJ0bWVudCB0ZXh0LAogIHBob3RvX3VybCB0ZXh0LAogIHBhc3N3b3JkX2hhc2ggdGV4dCBub3QgbnVsbCwKICBpc19hY3RpdmUgYm9vbGVhbiBub3QgbnVsbCBkZWZhdWx0IHRydWUsCiAgY3JlYXRlZF9hdCB0aW1lc3RhbXB0eiBub3QgbnVsbCBkZWZhdWx0IG5vdygpCik7CmNyZWF0ZSBpbmRleCBpZiBub3QgZXhpc3RzIGlkeF9lbXBsb3llZXNfdXNlcl9pZCBvbiBwdWJsaWMuZW1wbG95ZWVzICh1c2VyX2lkKTsKCi0tIC0tLS0tLS0tLS0gYWRtaW5zIC0tLS0tLS0tLS0KY3JlYXRlIHRhYmxlIGlmIG5vdCBleGlzdHMgcHVibGljLmFkbWlucyAoCiAgaWQgdXVpZCBwcmltYXJ5IGtleSBkZWZhdWx0IGdlbl9yYW5kb21fdXVpZCgpLAogIHVzZXJfaWQgdGV4dCB1bmlxdWUgbm90IG51bGwsCiAgbmFtZSB0ZXh0IG5vdCBudWxsLAogIGVtYWlsIHRleHQsCiAgcGFzc3dvcmRfaGFzaCB0ZXh0IG5vdCBudWxsLAogIGlzX2FjdGl2ZSBib29sZWFuIG5vdCBudWxsIGRlZmF1bHQgdHJ1ZSwKICBjcmVhdGVkX2F0IHRpbWVzdGFtcHR6IG5vdCBudWxsIGRlZmF1bHQgbm93KCkKKTsKY3JlYXRlIGluZGV4IGlmIG5vdCBleGlzdHMgaWR4X2FkbWluc191c2VyX2lkIG9uIHB1YmxpYy5hZG1pbnMgKHVzZXJfaWQpOwoKLS0gLS0tLS0tLS0tLSBhdHRlbmRhbmNlIC0tLS0tLS0tLS0KY3JlYXRlIHRhYmxlIGlmIG5vdCBleGlzdHMgcHVibGljLmF0dGVuZGFuY2UgKAogIGlkIHV1aWQgcHJpbWFyeSBrZXkgZGVmYXVsdCBnZW5fcmFuZG9tX3V1aWQoKSwKICBlbXBsb3llZV9pZCB1dWlkIG5vdCBudWxsIHJlZmVyZW5jZXMgcHVibGljLmVtcGxveWVlcyAoaWQpIG9uIGRlbGV0ZSBjYXNjYWRlLAogIGRhdGUgZGF0ZSBub3QgbnVsbCwKICBjbG9ja19pbiB0aW1lc3RhbXB0eiwKICBjbG9ja19vdXQgdGltZXN0YW1wdHosCiAgY2xvY2tfaW5fcGhvdG8gdGV4dCwKICBjbG9ja19vdXRfcGhvdG8gdGV4dCwKICBsYXRpdHVkZSBkb3VibGUgcHJlY2lzaW9uLAogIGxvbmdpdHVkZSBkb3VibGUgcHJlY2lzaW9uLAogIGFkZHJlc3MgdGV4dCwKICBzdGF0dXMgdGV4dCBub3QgbnVsbCBkZWZhdWx0ICdwcmVzZW50JywKICBub3RlcyB0ZXh0LAogIGNyZWF0ZWRfYXQgdGltZXN0YW1wdHogbm90IG51bGwgZGVmYXVsdCBub3coKQopOwpjcmVhdGUgaW5kZXggaWYgbm90IGV4aXN0cyBpZHhfYXR0ZW5kYW5jZV9lbXBsb3llZV9kYXRlCiAgb24gcHVibGljLmF0dGVuZGFuY2UgKGVtcGxveWVlX2lkLCBkYXRlIGRlc2MpOwoKLS0gLS0tLS0tLS0tLSBsZWF2ZV9yZXF1ZXN0cyAtLS0tLS0tLS0tCmNyZWF0ZSB0YWJsZSBpZiBub3QgZXhpc3RzIHB1YmxpYy5sZWF2ZV9yZXF1ZXN0cyAoCiAgaWQgdXVpZCBwcmltYXJ5IGtleSBkZWZhdWx0IGdlbl9yYW5kb21fdXVpZCgpLAogIGVtcGxveWVlX2lkIHV1aWQgbm90IG51bGwgcmVmZXJlbmNlcyBwdWJsaWMuZW1wbG95ZWVzIChpZCkgb24gZGVsZXRlIGNhc2NhZGUsCiAgbGVhdmVfdHlwZSB0ZXh0IG5vdCBudWxsLAogIHJlYXNvbiB0ZXh0LAogIHN0YXJ0X2RhdGUgZGF0ZSBub3QgbnVsbCwKICBlbmRfZGF0ZSBkYXRlIG5vdCBudWxsLAogIHN0YXR1cyB0ZXh0IG5vdCBudWxsIGRlZmF1bHQgJ3BlbmRpbmcnCiAgICBjaGVjayAoc3RhdHVzIGluICgncGVuZGluZycsICdhcHByb3ZlZCcsICdyZWplY3RlZCcpKSwKICBjcmVhdGVkX2F0IHRpbWVzdGFtcHR6IG5vdCBudWxsIGRlZmF1bHQgbm93KCkKKTsKY3JlYXRlIGluZGV4IGlmIG5vdCBleGlzdHMgaWR4X2xlYXZlX3JlcXVlc3RzX2VtcGxveWVlCiAgb24gcHVibGljLmxlYXZlX3JlcXVlc3RzIChlbXBsb3llZV9pZCwgY3JlYXRlZF9hdCBkZXNjKTsKY3JlYXRlIGluZGV4IGlmIG5vdCBleGlzdHMgaWR4X2xlYXZlX3JlcXVlc3RzX3N0YXR1cwogIG9uIHB1YmxpYy5sZWF2ZV9yZXF1ZXN0cyAoc3RhdHVzKTsKCi0tIC0tLS0tLS0tLS0gbm90aWZpY2F0aW9ucyAtLS0tLS0tLS0tCmNyZWF0ZSB0YWJsZSBpZiBub3QgZXhpc3RzIHB1YmxpYy5ub3RpZmljYXRpb25zICgKICBpZCB1dWlkIHByaW1hcnkga2V5IGRlZmF1bHQgZ2VuX3JhbmRvbV91dWlkKCksCiAgZW1wbG95ZWVfaWQgdXVpZCByZWZlcmVuY2VzIHB1YmxpYy5lbXBsb3llZXMgKGlkKSBvbiBkZWxldGUgY2FzY2FkZSwKICB0aXRsZSB0ZXh0IG5vdCBudWxsLAogIG1lc3NhZ2UgdGV4dCBub3QgbnVsbCwKICBpc19yZWFkIGJvb2xlYW4gbm90IG51bGwgZGVmYXVsdCBmYWxzZSwKICBjcmVhdGVkX2F0IHRpbWVzdGFtcHR6IG5vdCBudWxsIGRlZmF1bHQgbm93KCkKKTsKY3JlYXRlIGluZGV4IGlmIG5vdCBleGlzdHMgaWR4X25vdGlmaWNhdGlvbnNfZW1wbG95ZWUKICBvbiBwdWJsaWMubm90aWZpY2F0aW9ucyAoZW1wbG95ZWVfaWQsIGNyZWF0ZWRfYXQgZGVzYyk7CgotLSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLS0gU0VFRDogaGFueWEgYWt1biBhZG1pbiBkZWZhdWx0LgotLSB1c2VyX2lkPWFkbWluIC8gcGFzc3dvcmQ9YWRtaW4xMjMKLS0gS2FyeWF3YW4gZGlidWF0IG1hbnVhbCB2aWEgZGFzaGJvYXJkIGFkbWluLgotLSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmluc2VydCBpbnRvIHB1YmxpYy5hZG1pbnMgKHVzZXJfaWQsIG5hbWUsIGVtYWlsLCBwYXNzd29yZF9oYXNoKQp2YWx1ZXMgKAogICdhZG1pbicsCiAgJ0FkbWluaXN0cmF0b3InLAogICdhZG1pbkBtYWxha2FleHByZXNzLmlkJywKICAnJDJiJDEwJDZIVGxrZkswbmJqT3RxeFRtd0t2Ri43cXNMZzFRd0h1eEtIcXRnYkl2UWRtY3EuZElrSk9HJwopCm9uIGNvbmZsaWN0ICh1c2VyX2lkKSBkbyBub3RoaW5nOwo=
+-- ============================================================
+-- PT Malaka Express Line — Sistem Absensi
+-- Migration 001: tabel + seed data
+-- Jalankan di Supabase SQL Editor (project baru).
+-- ============================================================
+
+-- ---------- employees ----------
+create table if not exists public.employees (
+  id uuid primary key default gen_random_uuid(),
+  user_id text unique not null,
+  name text not null,
+  email text,
+  phone text,
+  position text,
+  department text,
+  photo_url text,
+  password_hash text not null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+create index if not exists idx_employees_user_id on public.employees (user_id);
+
+-- ---------- admins ----------
+create table if not exists public.admins (
+  id uuid primary key default gen_random_uuid(),
+  user_id text unique not null,
+  name text not null,
+  email text,
+  password_hash text not null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+create index if not exists idx_admins_user_id on public.admins (user_id);
+
+-- ---------- attendance ----------
+create table if not exists public.attendance (
+  id uuid primary key default gen_random_uuid(),
+  employee_id uuid not null references public.employees (id) on delete cascade,
+  date date not null,
+  clock_in timestamptz,
+  clock_out timestamptz,
+  clock_in_photo text,
+  clock_out_photo text,
+  latitude double precision,
+  longitude double precision,
+  address text,
+  status text not null default 'present',
+  notes text,
+  created_at timestamptz not null default now()
+);
+create index if not exists idx_attendance_employee_date
+  on public.attendance (employee_id, date desc);
+
+-- ---------- leave_requests ----------
+create table if not exists public.leave_requests (
+  id uuid primary key default gen_random_uuid(),
+  employee_id uuid not null references public.employees (id) on delete cascade,
+  leave_type text not null,
+  reason text,
+  start_date date not null,
+  end_date date not null,
+  status text not null default 'pending'
+    check (status in ('pending', 'approved', 'rejected')),
+  created_at timestamptz not null default now()
+);
+create index if not exists idx_leave_requests_employee
+  on public.leave_requests (employee_id, created_at desc);
+create index if not exists idx_leave_requests_status
+  on public.leave_requests (status);
+
+-- ---------- notifications ----------
+create table if not exists public.notifications (
+  id uuid primary key default gen_random_uuid(),
+  employee_id uuid references public.employees (id) on delete cascade,
+  title text not null,
+  message text not null,
+  is_read boolean not null default false,
+  created_at timestamptz not null default now()
+);
+create index if not exists idx_notifications_employee
+  on public.notifications (employee_id, created_at desc);
+
+-- ============================================================
+-- SEED: hanya akun admin default.
+-- user_id=admin / password=admin123
+-- Karyawan dibuat manual via dashboard admin.
+-- ============================================================
+
+insert into public.admins (user_id, name, email, password_hash)
+values (
+  'admin',
+  'Administrator',
+  'admin@malakaexpress.id',
+  '$2b$10$6HTlkfK0nbjOtqxTmwKvF.7qsLg1QwHuxKHqtgbIvQdmcq.dIkJOG'
+)
+on conflict (user_id) do nothing;
